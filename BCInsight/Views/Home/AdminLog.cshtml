@@ -1,0 +1,71 @@
+﻿@model List<BCInsight.DAL.TblAdminLog>
+@{
+    ViewBag.Title = "Admin Log";
+}
+
+
+<!-- Content Header (Page header) -->
+<div class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1 class="m-0">Admin Log</h1>
+            </div><!-- /.col -->
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="@Url.Action("")">Home</a></li>
+                    @*<li class="breadcrumb-item active">Dashboard v2</li>*@
+                </ol>
+            </div><!-- /.col -->
+        </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+</div>
+<!-- /.content-header -->
+<table id="tbladminLog" class="table table-bordered table-striped display compact">
+    <thead>
+        <tr>
+            <th>Section</th>
+            <th>Module</th>
+            <th>Action</th>
+            <th>Discription</th>
+            <th>User Id</th>
+            <th>Ip Address</th>
+            <th>Log Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>@item.SectionName</td>
+            <td>@item.ModuleName</td>
+            <td>@item.Action</td>
+            <td>@item.Description</td>
+            <td>@item.UserId</td>
+            <td>@item.Ip</td>
+            <td>@item.LogDate</td>
+        </tr>
+
+        }
+    </tbody>
+</table>
+
+
+
+<!-- jQuery -->
+<script src="~/plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="~/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script>
+    $(function () {
+        $("#tbladminLog").DataTable({
+            "responsive": true,
+            "lengthChange": true,
+            "autoWidth": false,
+            "ordering": false,
+            "language": {
+                "emptyTable": "Log not found"
+            },
+        });
+    });
+</script>

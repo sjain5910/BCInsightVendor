@@ -1,0 +1,66 @@
+﻿@model  List<BCInsight.Models.PfpsdDetailreportViewModel>
+@{
+
+}
+<div class="card">
+    <div class="card-body">
+        @if (Model.Count > 0)
+        {
+            <div align="center" id="msg" style="padding-top:15px;">
+
+                <a href="@Url.Action("DownloadPspfdmonthReport","Report")">Download <b>PSPFD Ranking Report</b></a>
+            </div>
+            <table id="pspfdrankingtable" class="display compact w-100 table-bordered">
+                <thead>
+                    <tr>
+                        <th>Brand Name</th>
+                        <th>Rank</th>                        
+                        <th>Category</th>
+                        <th>Zone</th>                       
+                        <th>Sq Ft</th>
+                        <th>Qty</th>
+                        <th>Amount</th>
+                        <th>Per Sq Ft Revenue Daily</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.BrandName</td>
+                            <td>@item.Ranking</td>                            
+                            <td>@item.Category</td>
+                            <td>@item.ZoneName</td>                            
+                            <td>@item.Sqft</td>
+                            <td>@item.Quantity</td>
+                            <td>@item.Amount</td>
+                            <td>@item.persqftrevenue</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+        else
+        {
+            <div align="center" id="msg" style="padding-top:15px;">
+                <div class="alert alert-success">PSPFD Ranking Report Result Not Found.</div>
+            </div>
+        }
+    </div>
+</div>
+<script src="~/plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="~/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script>
+    $(function () {
+        $("#pspfdrankingtable").DataTable({
+            "responsive": true,
+            "lengthChange": true,
+            "autoWidth": false,
+            "language": {
+                "emptyTable": "Record not found"
+            }
+        });
+    });
+</script>

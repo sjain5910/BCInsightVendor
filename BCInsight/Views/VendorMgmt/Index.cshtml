@@ -1,0 +1,153 @@
+﻿@model List<BCInsight.Models.AttendanceMgmtViewModel>
+@{
+    ViewBag.Title = "Index";
+}
+<style>
+    .breadcrumb1 {
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        margin-bottom: 1rem;
+        list-style: none;
+        border-radius: .25rem;
+    }
+</style>
+<!-- Content Header (Page header) -->
+<div class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1 class="m-0">Attendance Management</h1>
+            </div><!-- /.col -->
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="@Url.Action("Index","Home")">Home</a></li>
+                    <li class="breadcrumb-item active">Attendance Management</li>
+                </ol>
+            </div><!-- /.col -->
+        </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+</div>
+
+<!-- /.content-header -->
+
+<div class="card">
+    <div class="card-header text-right">
+        @using (Html.BeginForm("SearchByFilter", "VendorMgmt", FormMethod.Post, new { enctype = "multipart/form-data", id = "frmFilter" }))
+        {
+            <div id="search_filter" class="form d-inline-flex">
+                <label class="form-row align-items-center control-label m-0 mr-1">Filter:</label>
+                <select id="filterField" name="filterField" class="form-control-sm mr-1">
+                    <option value="SalesPersonNo">Sales Person No</option>
+                    <option value="Attdate">Attendance Date</option>
+                    <option value="Status">Status</option>
+                    <option value="FInTime">First In Time</option>
+                    <option value="SOutTime">Second Out Time</option>
+                    <option value="TInTime">Third In Time</option>
+                    <option value="FOutTime">Fourth Out Time</option>
+                    <option value="TotalHours">Total Hours</option>
+                </select>
+                <select id="filterOp" name="filterOp" class="form-control-sm mr-1">
+                    <option value="eq">Equal</option>
+                    <option value="noteq">Not Equal</option>
+                    <option value="lt">Less Than</option>
+                    <option value="gt">Greater Than</option>                   
+                </select>
+                <input type="text" id="filterVal" name="filterVal" class="form-control-sm mr-1" />
+                <button type="button" id="SearchbyFilter" class="btn btn-primary btn-sm mr-1" data-loading-text="Loading..." title="Search"> <i class="fa fa-search"></i></button>                
+            </div>
+
+        }
+    </div>
+
+    <!-- /.card-header -->
+    <div class="card-body">
+        <table id="attendancetable" class="display compact w-100 table-bordered">
+            <thead>
+                <tr>
+                    <th>Sales Person No</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                    <th>1st In Time</th>
+                    <th>2nd Out Time</th>
+                    <th>3rd In Time</th>
+                    <th>4th Out Time</th>
+                    <th>Total Hours</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                <tr>
+                    <td>@item.salePersonNo</td>
+                    <td>@Convert.ToString(string.Format("{0:dd/MM/yyyy}", item.AttendanceDate))</td>
+                    <td>@item.status</td>
+                    <td>@item.firstintime</td>
+                    <td>@item.secondouttime</td>
+                    <td>@item.thirdintime</td>
+                    <td>@item.fourthouttime</td>
+                    <td>@item.totalHours</td>
+                </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    <!-- /.card-body -->
+</div>
+
+
+<!-- jQuery -->
+<script src="~/plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="~/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script>
+    $(function () {
+        $("#attendancetable").DataTable({
+            "responsive": true,
+            "lengthChange": true,
+            "autoWidth": false,
+            "language": {
+                "emptyTable": "Attendance not found"
+            }
+        });
+    });
+    $("#SearchbyFilter").click(function () {
+        debugger
+        var datasend = { filterfield: $("#filterField").val(), FilterOption: $("#filterOp").val(), Filtervalue: $("#filterVal").val() };
+        var result = validateServiceEdit();
+        if (result) {
+            $("#frmFilter")[0].submit();
+        }
+        else {
+            alert('Fill all fields')
+        }
+    });
+
+    function IsNullOrUndefined(pvalue) {
+        return pvalue === undefined || pvalue === null || pvalue === '';
+    }
+    function validateServiceEdit() {
+
+        var filterfield = $("#filterField").val();
+        var FilterOption = $("#filterOp").val();
+        var Filtervalue = $("#filterVal").val();
+        if (filterfield !== undefined) {
+            if (IsNullOrUndefined(filterfield)) {
+                return false;
+            }
+        }
+        if (FilterOption !== undefined) {
+            if (IsNullOrUndefined(FilterOption)) {
+                return false;
+            }
+        }
+        if (Filtervalue !== undefined) {
+            if (IsNullOrUndefined(Filtervalue)) {
+                return false;
+            }
+        }
+        return true;
+    }
+</script>
+

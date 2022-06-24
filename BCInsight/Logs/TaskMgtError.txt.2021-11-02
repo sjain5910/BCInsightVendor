@@ -1,0 +1,43 @@
+INFO 5 BCInsight.Controllers.HomeController - User: DESKTOP-LPOUG0E & IP: ::1
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\HelperClass\Utility.cs:line 19
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : Object reference not set to an instance of an object.
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\HelperClass\Utility.cs:line 19
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : Object reference not set to an instance of an object.
+INFO 37 BCInsight.Controllers.HomeController - User: DESKTOP-LPOUG0E & IP: ::1
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\HelperClass\Utility.cs:line 19
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : Object reference not set to an instance of an object.
+INFO 6 BCInsight.Controllers.HomeController - User: DESKTOP-LPOUG0E & IP: ::1
+ERROR 7 BCInsight.Controllers.UserMgmtController - System.OverflowException: Value was either too large or too small for an unsigned byte.
+   at System.Byte.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToByte(String value)
+   at BCInsight.Controllers.UserMgmtController.GetusermanagementFromExcelRow(DataRow row) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\UserMgmtController.cs:line 466
+   at BCInsight.Controllers.UserMgmtController.ImportExcel() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\UserMgmtController.cs:line 340
+INFO 6 BCInsight.Controllers.HomeController - User: DESKTOP-LPOUG0E & IP: ::1
+ERROR 6 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\HelperClass\Utility.cs:line 19
+ERROR 6 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : Object reference not set to an instance of an object.
+ERROR 6 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\HelperClass\Utility.cs:line 19
+ERROR 6 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : Object reference not set to an instance of an object.
+INFO 7 BCInsight.Controllers.HomeController - User: DESKTOP-LPOUG0E & IP: ::1
+ERROR 6 BCInsight.Controllers.UserMgmtController - System.OverflowException: Value was either too large or too small for an unsigned byte.
+   at System.Byte.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToByte(String value)
+   at BCInsight.Controllers.UserMgmtController.GetusermanagementFromExcelRow(DataRow row) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\UserMgmtController.cs:line 466
+   at BCInsight.Controllers.UserMgmtController.ImportExcel() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\UserMgmtController.cs:line 340
+ERROR 7 BCInsight.Controllers.UserMgmtController - System.OverflowException: Value was either too large or too small for an unsigned byte.
+   at System.Byte.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToByte(String value)
+   at BCInsight.Controllers.UserMgmtController.GetusermanagementFromExcelRow(DataRow row) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\UserMgmtController.cs:line 466
+   at BCInsight.Controllers.UserMgmtController.ImportExcel() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\UserMgmtController.cs:line 340
+INFO 5 BCInsight.Controllers.HomeController - User: DESKTOP-LPOUG0E & IP: ::1
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\HelperClass\Utility.cs:line 19
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : Object reference not set to an instance of an object.
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\HelperClass\Utility.cs:line 19
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : Object reference not set to an instance of an object.
+INFO 14 BCInsight.Controllers.HomeController - User: DESKTOP-LPOUG0E & IP: ::1

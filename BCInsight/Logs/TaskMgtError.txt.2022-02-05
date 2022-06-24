@@ -1,0 +1,864 @@
+ERROR 5 BCInsight.Controllers.HomeController - System.Data.Entity.Core.EntityCommandCompilationException: An error occurred while preparing the command definition. See the inner exception for details. ---> System.InvalidOperationException: The function import 'bcInsightEntities.SP_TopSalePersonDashboard' cannot be executed because it is not mapped to a store function.
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.GetTargetFunctionMapping(DbFunctionCommandTree functionCommandTree)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.CreateCommandDefinition()
+   at System.Data.Entity.Core.EntityClient.EntityCommand.TryGetEntityCommandDefinitionFromQueryCache(EntityCommandDefinition& entityCommandDefinition)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.GetCommandDefinition()
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateFunctionObjectResult[TElement](EntityCommand entityCommand, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ExecutionOptions executionOptions)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__46()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__45()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, MergeOption mergeOption, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ObjectParameter[] parameters)
+   at BCInsight.DAL.bcInsightEntities.SP_TopSalePersonDashboard(Nullable`1 saledate) in D:\Aegis Project\BCInsight\BCInsight\BCInsight.DAL\BCInsight.Context.cs:line 231
+   at BCInsight.Controllers.HomeController.Index() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 42
+ERROR 56 BCInsight.Controllers.HomeController - System.Data.Entity.Core.EntityCommandCompilationException: An error occurred while preparing the command definition. See the inner exception for details. ---> System.InvalidOperationException: The function import 'bcInsightEntities.SP_TopSalePersonDashboard' cannot be executed because it is not mapped to a store function.
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.GetTargetFunctionMapping(DbFunctionCommandTree functionCommandTree)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.CreateCommandDefinition()
+   at System.Data.Entity.Core.EntityClient.EntityCommand.TryGetEntityCommandDefinitionFromQueryCache(EntityCommandDefinition& entityCommandDefinition)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.GetCommandDefinition()
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateFunctionObjectResult[TElement](EntityCommand entityCommand, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ExecutionOptions executionOptions)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__46()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__45()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, MergeOption mergeOption, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ObjectParameter[] parameters)
+   at BCInsight.DAL.bcInsightEntities.SP_TopSalePersonDashboard(Nullable`1 saledate) in D:\Aegis Project\BCInsight\BCInsight\BCInsight.DAL\BCInsight.Context.cs:line 231
+   at BCInsight.Controllers.HomeController.Index() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 42
+ERROR 56 BCInsight.Controllers.HomeController - System.Data.Entity.Core.EntityCommandCompilationException: An error occurred while preparing the command definition. See the inner exception for details. ---> System.InvalidOperationException: The function import 'bcInsightEntities.SP_DasboardStockUpdatechart' cannot be executed because it is not mapped to a store function.
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.GetTargetFunctionMapping(DbFunctionCommandTree functionCommandTree)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.CreateCommandDefinition()
+   at System.Data.Entity.Core.EntityClient.EntityCommand.TryGetEntityCommandDefinitionFromQueryCache(EntityCommandDefinition& entityCommandDefinition)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.GetCommandDefinition()
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateFunctionObjectResult[TElement](EntityCommand entityCommand, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ExecutionOptions executionOptions)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__46()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__45()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, MergeOption mergeOption, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ObjectParameter[] parameters)
+   at BCInsight.DAL.bcInsightEntities.SP_DasboardStockUpdatechart(Nullable`1 stockdate) in D:\Aegis Project\BCInsight\BCInsight\BCInsight.DAL\BCInsight.Context.cs:line 240
+   at BCInsight.Controllers.HomeController.getstockUpdatechart() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 471
+ERROR 59 BCInsight.Controllers.HomeController - System.Data.Entity.Core.EntityCommandCompilationException: An error occurred while preparing the command definition. See the inner exception for details. ---> System.InvalidOperationException: The function import 'bcInsightEntities.SP_DasboardStockUpdatechart' cannot be executed because it is not mapped to a store function.
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.GetTargetFunctionMapping(DbFunctionCommandTree functionCommandTree)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.CreateCommandDefinition()
+   at System.Data.Entity.Core.EntityClient.EntityCommand.TryGetEntityCommandDefinitionFromQueryCache(EntityCommandDefinition& entityCommandDefinition)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.GetCommandDefinition()
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateFunctionObjectResult[TElement](EntityCommand entityCommand, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ExecutionOptions executionOptions)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__46()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__45()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, MergeOption mergeOption, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ObjectParameter[] parameters)
+   at BCInsight.DAL.bcInsightEntities.SP_DasboardStockUpdatechart(Nullable`1 stockdate) in D:\Aegis Project\BCInsight\BCInsight\BCInsight.DAL\BCInsight.Context.cs:line 240
+   at BCInsight.Controllers.HomeController.getstockUpdatechart() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 471
+ERROR 52 BCInsight.Controllers.HomeController - System.DivideByZeroException: Attempted to divide by zero.
+   at System.Decimal.FCallDivide(Decimal& d1, Decimal& d2)
+   at System.Decimal.op_Division(Decimal d1, Decimal d2)
+   at BCInsight.Controllers.HomeController.getdailynetsaleamt() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 142
+ERROR 59 BCInsight.Controllers.HomeController - System.DivideByZeroException: Attempted to divide by zero.
+   at BCInsight.Controllers.HomeController.getdailyStockUpdate() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 201
+ERROR 5 BCInsight.Controllers.HomeController - System.Data.Entity.Core.EntityCommandCompilationException: An error occurred while preparing the command definition. See the inner exception for details. ---> System.InvalidOperationException: The function import 'bcInsightEntities.SP_TopSalePersonDashboard' cannot be executed because it is not mapped to a store function.
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.GetTargetFunctionMapping(DbFunctionCommandTree functionCommandTree)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.CreateCommandDefinition()
+   at System.Data.Entity.Core.EntityClient.EntityCommand.TryGetEntityCommandDefinitionFromQueryCache(EntityCommandDefinition& entityCommandDefinition)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.GetCommandDefinition()
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateFunctionObjectResult[TElement](EntityCommand entityCommand, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ExecutionOptions executionOptions)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__46()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__45()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, MergeOption mergeOption, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ObjectParameter[] parameters)
+   at BCInsight.DAL.bcInsightEntities.SP_TopSalePersonDashboard(Nullable`1 saledate) in D:\Aegis Project\BCInsight\BCInsight\BCInsight.DAL\BCInsight.Context.cs:line 231
+   at BCInsight.Controllers.HomeController.Index() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 42
+ERROR 7 BCInsight.Controllers.HomeController - System.Data.Entity.Core.EntityCommandCompilationException: An error occurred while preparing the command definition. See the inner exception for details. ---> System.InvalidOperationException: The function import 'bcInsightEntities.SP_TopSalePersonDashboard' cannot be executed because it is not mapped to a store function.
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.GetTargetFunctionMapping(DbFunctionCommandTree functionCommandTree)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.CreateCommandDefinition()
+   at System.Data.Entity.Core.EntityClient.EntityCommand.TryGetEntityCommandDefinitionFromQueryCache(EntityCommandDefinition& entityCommandDefinition)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.GetCommandDefinition()
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateFunctionObjectResult[TElement](EntityCommand entityCommand, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ExecutionOptions executionOptions)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__46()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__45()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, MergeOption mergeOption, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ObjectParameter[] parameters)
+   at BCInsight.DAL.bcInsightEntities.SP_TopSalePersonDashboard(Nullable`1 saledate) in D:\Aegis Project\BCInsight\BCInsight\BCInsight.DAL\BCInsight.Context.cs:line 231
+   at BCInsight.Controllers.HomeController.Index() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 42
+ERROR 5 BCInsight.Controllers.HomeController - System.DivideByZeroException: Attempted to divide by zero.
+   at System.Decimal.FCallDivide(Decimal& d1, Decimal& d2)
+   at System.Decimal.op_Division(Decimal d1, Decimal d2)
+   at BCInsight.Controllers.HomeController.getdailynetsaleamt() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 142
+ERROR 6 BCInsight.Controllers.HomeController - System.DivideByZeroException: Attempted to divide by zero.
+   at BCInsight.Controllers.HomeController.getdailyStockUpdate() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 201
+ERROR 7 BCInsight.Controllers.HomeController - System.Data.Entity.Core.EntityCommandCompilationException: An error occurred while preparing the command definition. See the inner exception for details. ---> System.InvalidOperationException: The function import 'bcInsightEntities.SP_DasboardStockUpdatechart' cannot be executed because it is not mapped to a store function.
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.GetTargetFunctionMapping(DbFunctionCommandTree functionCommandTree)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.CreateCommandDefinition()
+   at System.Data.Entity.Core.EntityClient.EntityCommand.TryGetEntityCommandDefinitionFromQueryCache(EntityCommandDefinition& entityCommandDefinition)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.GetCommandDefinition()
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateFunctionObjectResult[TElement](EntityCommand entityCommand, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ExecutionOptions executionOptions)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__46()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__45()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, MergeOption mergeOption, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ObjectParameter[] parameters)
+   at BCInsight.DAL.bcInsightEntities.SP_DasboardStockUpdatechart(Nullable`1 stockdate) in D:\Aegis Project\BCInsight\BCInsight\BCInsight.DAL\BCInsight.Context.cs:line 240
+   at BCInsight.Controllers.HomeController.getstockUpdatechart() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 471
+ERROR 10 BCInsight.Controllers.HomeController - System.Data.Entity.Core.EntityCommandCompilationException: An error occurred while preparing the command definition. See the inner exception for details. ---> System.InvalidOperationException: The function import 'bcInsightEntities.SP_DasboardStockUpdatechart' cannot be executed because it is not mapped to a store function.
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.GetTargetFunctionMapping(DbFunctionCommandTree functionCommandTree)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.CreateCommandDefinition()
+   at System.Data.Entity.Core.EntityClient.EntityCommand.TryGetEntityCommandDefinitionFromQueryCache(EntityCommandDefinition& entityCommandDefinition)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.GetCommandDefinition()
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateFunctionObjectResult[TElement](EntityCommand entityCommand, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ExecutionOptions executionOptions)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__46()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__45()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, MergeOption mergeOption, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ObjectParameter[] parameters)
+   at BCInsight.DAL.bcInsightEntities.SP_DasboardStockUpdatechart(Nullable`1 stockdate) in D:\Aegis Project\BCInsight\BCInsight\BCInsight.DAL\BCInsight.Context.cs:line 240
+   at BCInsight.Controllers.HomeController.getstockUpdatechart() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 471
+ERROR 16 BCInsight.Controllers.HomeController - System.Data.Entity.Core.EntityCommandCompilationException: An error occurred while preparing the command definition. See the inner exception for details. ---> System.InvalidOperationException: The function import 'bcInsightEntities.SP_DasboardStockUpdatechart' cannot be executed because it is not mapped to a store function.
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.GetTargetFunctionMapping(DbFunctionCommandTree functionCommandTree)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.CreateCommandDefinition()
+   at System.Data.Entity.Core.EntityClient.EntityCommand.TryGetEntityCommandDefinitionFromQueryCache(EntityCommandDefinition& entityCommandDefinition)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.GetCommandDefinition()
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateFunctionObjectResult[TElement](EntityCommand entityCommand, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ExecutionOptions executionOptions)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__46()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__45()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, MergeOption mergeOption, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ObjectParameter[] parameters)
+   at BCInsight.DAL.bcInsightEntities.SP_DasboardStockUpdatechart(Nullable`1 stockdate) in D:\Aegis Project\BCInsight\BCInsight\BCInsight.DAL\BCInsight.Context.cs:line 240
+   at BCInsight.Controllers.HomeController.getstockUpdatechart() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 471
+ERROR 16 BCInsight.Controllers.HomeController - System.Data.Entity.Core.EntityCommandCompilationException: An error occurred while preparing the command definition. See the inner exception for details. ---> System.InvalidOperationException: The function import 'bcInsightEntities.SP_DasboardStockUpdatechart' cannot be executed because it is not mapped to a store function.
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.GetTargetFunctionMapping(DbFunctionCommandTree functionCommandTree)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.CreateCommandDefinition()
+   at System.Data.Entity.Core.EntityClient.EntityCommand.TryGetEntityCommandDefinitionFromQueryCache(EntityCommandDefinition& entityCommandDefinition)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.GetCommandDefinition()
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateFunctionObjectResult[TElement](EntityCommand entityCommand, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ExecutionOptions executionOptions)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__46()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__45()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, MergeOption mergeOption, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ObjectParameter[] parameters)
+   at BCInsight.DAL.bcInsightEntities.SP_DasboardStockUpdatechart(Nullable`1 stockdate) in D:\Aegis Project\BCInsight\BCInsight\BCInsight.DAL\BCInsight.Context.cs:line 240
+   at BCInsight.Controllers.HomeController.getstockUpdatechart() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 471
+ERROR 25 BCInsight.Controllers.HomeController - System.Data.Entity.Core.EntityCommandCompilationException: An error occurred while preparing the command definition. See the inner exception for details. ---> System.InvalidOperationException: The function import 'bcInsightEntities.SP_TopSalePersonDashboard' cannot be executed because it is not mapped to a store function.
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.GetTargetFunctionMapping(DbFunctionCommandTree functionCommandTree)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.CreateCommandDefinition()
+   at System.Data.Entity.Core.EntityClient.EntityCommand.TryGetEntityCommandDefinitionFromQueryCache(EntityCommandDefinition& entityCommandDefinition)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.GetCommandDefinition()
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateFunctionObjectResult[TElement](EntityCommand entityCommand, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ExecutionOptions executionOptions)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__46()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__45()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, MergeOption mergeOption, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ObjectParameter[] parameters)
+   at BCInsight.DAL.bcInsightEntities.SP_TopSalePersonDashboard(Nullable`1 saledate) in D:\Aegis Project\BCInsight\BCInsight\BCInsight.DAL\BCInsight.Context.cs:line 231
+   at BCInsight.Controllers.HomeController.Index() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 42
+ERROR 21 BCInsight.Controllers.HomeController - System.DivideByZeroException: Attempted to divide by zero.
+   at System.Decimal.FCallDivide(Decimal& d1, Decimal& d2)
+   at System.Decimal.op_Division(Decimal d1, Decimal d2)
+   at BCInsight.Controllers.HomeController.getdailynetsaleamt() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 142
+ERROR 25 BCInsight.Controllers.HomeController - System.DivideByZeroException: Attempted to divide by zero.
+   at BCInsight.Controllers.HomeController.getdailyStockUpdate() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 201
+ERROR 25 BCInsight.Controllers.HomeController - System.Data.Entity.Core.EntityCommandCompilationException: An error occurred while preparing the command definition. See the inner exception for details. ---> System.InvalidOperationException: The function import 'bcInsightEntities.SP_DasboardStockUpdatechart' cannot be executed because it is not mapped to a store function.
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.GetTargetFunctionMapping(DbFunctionCommandTree functionCommandTree)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.CreateCommandDefinition()
+   at System.Data.Entity.Core.EntityClient.EntityCommand.TryGetEntityCommandDefinitionFromQueryCache(EntityCommandDefinition& entityCommandDefinition)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.GetCommandDefinition()
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateFunctionObjectResult[TElement](EntityCommand entityCommand, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ExecutionOptions executionOptions)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__46()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__45()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, MergeOption mergeOption, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ObjectParameter[] parameters)
+   at BCInsight.DAL.bcInsightEntities.SP_DasboardStockUpdatechart(Nullable`1 stockdate) in D:\Aegis Project\BCInsight\BCInsight\BCInsight.DAL\BCInsight.Context.cs:line 240
+   at BCInsight.Controllers.HomeController.getstockUpdatechart() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 471
+ERROR 21 BCInsight.Controllers.HomeController - System.Data.Entity.Core.EntityCommandCompilationException: An error occurred while preparing the command definition. See the inner exception for details. ---> System.InvalidOperationException: The function import 'bcInsightEntities.SP_DasboardStockUpdatechart' cannot be executed because it is not mapped to a store function.
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.GetTargetFunctionMapping(DbFunctionCommandTree functionCommandTree)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.CreateCommandDefinition()
+   at System.Data.Entity.Core.EntityClient.EntityCommand.TryGetEntityCommandDefinitionFromQueryCache(EntityCommandDefinition& entityCommandDefinition)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.GetCommandDefinition()
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateFunctionObjectResult[TElement](EntityCommand entityCommand, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ExecutionOptions executionOptions)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__46()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__45()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, MergeOption mergeOption, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ObjectParameter[] parameters)
+   at BCInsight.DAL.bcInsightEntities.SP_DasboardStockUpdatechart(Nullable`1 stockdate) in D:\Aegis Project\BCInsight\BCInsight\BCInsight.DAL\BCInsight.Context.cs:line 240
+   at BCInsight.Controllers.HomeController.getstockUpdatechart() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 471
+ERROR 30 BCInsight.Controllers.HomeController - System.Data.Entity.Core.EntityCommandCompilationException: An error occurred while preparing the command definition. See the inner exception for details. ---> System.InvalidOperationException: The function import 'bcInsightEntities.SP_DasboardStockUpdatechart' cannot be executed because it is not mapped to a store function.
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.GetTargetFunctionMapping(DbFunctionCommandTree functionCommandTree)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.CreateCommandDefinition()
+   at System.Data.Entity.Core.EntityClient.EntityCommand.TryGetEntityCommandDefinitionFromQueryCache(EntityCommandDefinition& entityCommandDefinition)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.GetCommandDefinition()
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateFunctionObjectResult[TElement](EntityCommand entityCommand, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ExecutionOptions executionOptions)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__46()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__45()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, MergeOption mergeOption, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ObjectParameter[] parameters)
+   at BCInsight.DAL.bcInsightEntities.SP_DasboardStockUpdatechart(Nullable`1 stockdate) in D:\Aegis Project\BCInsight\BCInsight\BCInsight.DAL\BCInsight.Context.cs:line 240
+   at BCInsight.Controllers.HomeController.getstockUpdatechart() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 471
+ERROR 28 BCInsight.Controllers.HomeController - System.Data.Entity.Core.EntityCommandCompilationException: An error occurred while preparing the command definition. See the inner exception for details. ---> System.InvalidOperationException: The function import 'bcInsightEntities.SP_DasboardStockUpdatechart' cannot be executed because it is not mapped to a store function.
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.GetTargetFunctionMapping(DbFunctionCommandTree functionCommandTree)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.CreateCommandDefinition()
+   at System.Data.Entity.Core.EntityClient.EntityCommand.TryGetEntityCommandDefinitionFromQueryCache(EntityCommandDefinition& entityCommandDefinition)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.GetCommandDefinition()
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateFunctionObjectResult[TElement](EntityCommand entityCommand, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ExecutionOptions executionOptions)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__46()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__45()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, MergeOption mergeOption, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ObjectParameter[] parameters)
+   at BCInsight.DAL.bcInsightEntities.SP_DasboardStockUpdatechart(Nullable`1 stockdate) in D:\Aegis Project\BCInsight\BCInsight\BCInsight.DAL\BCInsight.Context.cs:line 240
+   at BCInsight.Controllers.HomeController.getstockUpdatechart() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 471
+ERROR 35 BCInsight.Controllers.HomeController - System.Data.Entity.Core.EntityCommandCompilationException: An error occurred while preparing the command definition. See the inner exception for details. ---> System.InvalidOperationException: The function import 'bcInsightEntities.SP_DasboardStockUpdatechart' cannot be executed because it is not mapped to a store function.
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.GetTargetFunctionMapping(DbFunctionCommandTree functionCommandTree)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.CreateCommandDefinition()
+   at System.Data.Entity.Core.EntityClient.EntityCommand.TryGetEntityCommandDefinitionFromQueryCache(EntityCommandDefinition& entityCommandDefinition)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.GetCommandDefinition()
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateFunctionObjectResult[TElement](EntityCommand entityCommand, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ExecutionOptions executionOptions)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__46()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__45()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, MergeOption mergeOption, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ObjectParameter[] parameters)
+   at BCInsight.DAL.bcInsightEntities.SP_DasboardStockUpdatechart(Nullable`1 stockdate) in D:\Aegis Project\BCInsight\BCInsight\BCInsight.DAL\BCInsight.Context.cs:line 240
+   at BCInsight.Controllers.HomeController.getstockUpdatechart() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 471
+ERROR 33 BCInsight.Controllers.HomeController - System.Data.Entity.Core.EntityCommandCompilationException: An error occurred while preparing the command definition. See the inner exception for details. ---> System.InvalidOperationException: The function import 'bcInsightEntities.SP_DasboardStockUpdatechart' cannot be executed because it is not mapped to a store function.
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.GetTargetFunctionMapping(DbFunctionCommandTree functionCommandTree)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.CreateCommandDefinition()
+   at System.Data.Entity.Core.EntityClient.EntityCommand.TryGetEntityCommandDefinitionFromQueryCache(EntityCommandDefinition& entityCommandDefinition)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.GetCommandDefinition()
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateFunctionObjectResult[TElement](EntityCommand entityCommand, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ExecutionOptions executionOptions)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__46()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__45()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, MergeOption mergeOption, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ObjectParameter[] parameters)
+   at BCInsight.DAL.bcInsightEntities.SP_DasboardStockUpdatechart(Nullable`1 stockdate) in D:\Aegis Project\BCInsight\BCInsight\BCInsight.DAL\BCInsight.Context.cs:line 240
+   at BCInsight.Controllers.HomeController.getstockUpdatechart() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 471
+ERROR 35 BCInsight.Controllers.HomeController - System.Data.Entity.Core.EntityCommandCompilationException: An error occurred while preparing the command definition. See the inner exception for details. ---> System.InvalidOperationException: The function import 'bcInsightEntities.SP_DasboardStockUpdatechart' cannot be executed because it is not mapped to a store function.
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.GetTargetFunctionMapping(DbFunctionCommandTree functionCommandTree)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.CreateCommandDefinition()
+   at System.Data.Entity.Core.EntityClient.EntityCommand.TryGetEntityCommandDefinitionFromQueryCache(EntityCommandDefinition& entityCommandDefinition)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.GetCommandDefinition()
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateFunctionObjectResult[TElement](EntityCommand entityCommand, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ExecutionOptions executionOptions)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__46()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__45()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, MergeOption mergeOption, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ObjectParameter[] parameters)
+   at BCInsight.DAL.bcInsightEntities.SP_DasboardStockUpdatechart(Nullable`1 stockdate) in D:\Aegis Project\BCInsight\BCInsight\BCInsight.DAL\BCInsight.Context.cs:line 240
+   at BCInsight.Controllers.HomeController.getstockUpdatechart() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 471
+ERROR 31 BCInsight.Controllers.HomeController - System.Data.Entity.Core.EntityCommandCompilationException: An error occurred while preparing the command definition. See the inner exception for details. ---> System.InvalidOperationException: The function import 'bcInsightEntities.SP_DasboardStockUpdatechart' cannot be executed because it is not mapped to a store function.
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.GetTargetFunctionMapping(DbFunctionCommandTree functionCommandTree)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.CreateCommandDefinition()
+   at System.Data.Entity.Core.EntityClient.EntityCommand.TryGetEntityCommandDefinitionFromQueryCache(EntityCommandDefinition& entityCommandDefinition)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.GetCommandDefinition()
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateFunctionObjectResult[TElement](EntityCommand entityCommand, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ExecutionOptions executionOptions)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__46()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__45()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, MergeOption mergeOption, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ObjectParameter[] parameters)
+   at BCInsight.DAL.bcInsightEntities.SP_DasboardStockUpdatechart(Nullable`1 stockdate) in D:\Aegis Project\BCInsight\BCInsight\BCInsight.DAL\BCInsight.Context.cs:line 240
+   at BCInsight.Controllers.HomeController.getstockUpdatechart() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 471
+ERROR 33 BCInsight.Controllers.HomeController - System.Data.Entity.Core.EntityCommandCompilationException: An error occurred while preparing the command definition. See the inner exception for details. ---> System.InvalidOperationException: The function import 'bcInsightEntities.SP_DasboardStockUpdatechart' cannot be executed because it is not mapped to a store function.
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.GetTargetFunctionMapping(DbFunctionCommandTree functionCommandTree)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.CreateCommandDefinition()
+   at System.Data.Entity.Core.EntityClient.EntityCommand.TryGetEntityCommandDefinitionFromQueryCache(EntityCommandDefinition& entityCommandDefinition)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.GetCommandDefinition()
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateFunctionObjectResult[TElement](EntityCommand entityCommand, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ExecutionOptions executionOptions)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__46()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__45()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, MergeOption mergeOption, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ObjectParameter[] parameters)
+   at BCInsight.DAL.bcInsightEntities.SP_DasboardStockUpdatechart(Nullable`1 stockdate) in D:\Aegis Project\BCInsight\BCInsight\BCInsight.DAL\BCInsight.Context.cs:line 240
+   at BCInsight.Controllers.HomeController.getstockUpdatechart() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 471
+ERROR 35 BCInsight.Controllers.HomeController - System.Data.Entity.Core.EntityCommandCompilationException: An error occurred while preparing the command definition. See the inner exception for details. ---> System.InvalidOperationException: The function import 'bcInsightEntities.SP_DasboardStockUpdatechart' cannot be executed because it is not mapped to a store function.
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.GetTargetFunctionMapping(DbFunctionCommandTree functionCommandTree)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.CreateCommandDefinition()
+   at System.Data.Entity.Core.EntityClient.EntityCommand.TryGetEntityCommandDefinitionFromQueryCache(EntityCommandDefinition& entityCommandDefinition)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.GetCommandDefinition()
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateFunctionObjectResult[TElement](EntityCommand entityCommand, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ExecutionOptions executionOptions)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__46()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__45()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, MergeOption mergeOption, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ObjectParameter[] parameters)
+   at BCInsight.DAL.bcInsightEntities.SP_DasboardStockUpdatechart(Nullable`1 stockdate) in D:\Aegis Project\BCInsight\BCInsight\BCInsight.DAL\BCInsight.Context.cs:line 240
+   at BCInsight.Controllers.HomeController.getstockUpdatechart() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 471
+ERROR 48 BCInsight.Controllers.HomeController - System.Data.Entity.Core.EntityCommandCompilationException: An error occurred while preparing the command definition. See the inner exception for details. ---> System.InvalidOperationException: The function import 'bcInsightEntities.SP_TopSalePersonDashboard' cannot be executed because it is not mapped to a store function.
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.GetTargetFunctionMapping(DbFunctionCommandTree functionCommandTree)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.CreateCommandDefinition()
+   at System.Data.Entity.Core.EntityClient.EntityCommand.TryGetEntityCommandDefinitionFromQueryCache(EntityCommandDefinition& entityCommandDefinition)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.GetCommandDefinition()
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateFunctionObjectResult[TElement](EntityCommand entityCommand, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ExecutionOptions executionOptions)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__46()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__45()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, MergeOption mergeOption, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ObjectParameter[] parameters)
+   at BCInsight.DAL.bcInsightEntities.SP_TopSalePersonDashboard(Nullable`1 saledate) in D:\Aegis Project\BCInsight\BCInsight\BCInsight.DAL\BCInsight.Context.cs:line 231
+   at BCInsight.Controllers.HomeController.Index() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 42
+ERROR 52 BCInsight.Controllers.HomeController - System.DivideByZeroException: Attempted to divide by zero.
+   at System.Decimal.FCallDivide(Decimal& d1, Decimal& d2)
+   at System.Decimal.op_Division(Decimal d1, Decimal d2)
+   at BCInsight.Controllers.HomeController.getdailynetsaleamt() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 142
+ERROR 48 BCInsight.Controllers.HomeController - System.DivideByZeroException: Attempted to divide by zero.
+   at BCInsight.Controllers.HomeController.getdailyStockUpdate() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 201
+ERROR 57 BCInsight.Controllers.HomeController - System.Data.Entity.Core.EntityCommandCompilationException: An error occurred while preparing the command definition. See the inner exception for details. ---> System.InvalidOperationException: The function import 'bcInsightEntities.SP_DasboardStockUpdatechart' cannot be executed because it is not mapped to a store function.
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.GetTargetFunctionMapping(DbFunctionCommandTree functionCommandTree)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.CreateCommandDefinition()
+   at System.Data.Entity.Core.EntityClient.EntityCommand.TryGetEntityCommandDefinitionFromQueryCache(EntityCommandDefinition& entityCommandDefinition)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.GetCommandDefinition()
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateFunctionObjectResult[TElement](EntityCommand entityCommand, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ExecutionOptions executionOptions)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__46()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__45()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, MergeOption mergeOption, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ObjectParameter[] parameters)
+   at BCInsight.DAL.bcInsightEntities.SP_DasboardStockUpdatechart(Nullable`1 stockdate) in D:\Aegis Project\BCInsight\BCInsight\BCInsight.DAL\BCInsight.Context.cs:line 240
+   at BCInsight.Controllers.HomeController.getstockUpdatechart() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 471
+ERROR 55 BCInsight.Controllers.HomeController - System.Data.Entity.Core.EntityCommandCompilationException: An error occurred while preparing the command definition. See the inner exception for details. ---> System.InvalidOperationException: The function import 'bcInsightEntities.SP_DasboardStockUpdatechart' cannot be executed because it is not mapped to a store function.
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.GetTargetFunctionMapping(DbFunctionCommandTree functionCommandTree)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.CreateCommandDefinition()
+   at System.Data.Entity.Core.EntityClient.EntityCommand.TryGetEntityCommandDefinitionFromQueryCache(EntityCommandDefinition& entityCommandDefinition)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.GetCommandDefinition()
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateFunctionObjectResult[TElement](EntityCommand entityCommand, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ExecutionOptions executionOptions)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__46()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__45()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, MergeOption mergeOption, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ObjectParameter[] parameters)
+   at BCInsight.DAL.bcInsightEntities.SP_DasboardStockUpdatechart(Nullable`1 stockdate) in D:\Aegis Project\BCInsight\BCInsight\BCInsight.DAL\BCInsight.Context.cs:line 240
+   at BCInsight.Controllers.HomeController.getstockUpdatechart() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 471
+ERROR 5 BCInsight.Controllers.HomeController - System.Data.Entity.Core.EntityCommandCompilationException: An error occurred while preparing the command definition. See the inner exception for details. ---> System.InvalidOperationException: The function import 'bcInsightEntities.SP_TopSalePersonDashboard' cannot be executed because it is not mapped to a store function.
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.GetTargetFunctionMapping(DbFunctionCommandTree functionCommandTree)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.CreateCommandDefinition()
+   at System.Data.Entity.Core.EntityClient.EntityCommand.TryGetEntityCommandDefinitionFromQueryCache(EntityCommandDefinition& entityCommandDefinition)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.GetCommandDefinition()
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateFunctionObjectResult[TElement](EntityCommand entityCommand, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ExecutionOptions executionOptions)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__46()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__45()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, MergeOption mergeOption, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ObjectParameter[] parameters)
+   at BCInsight.DAL.bcInsightEntities.SP_TopSalePersonDashboard(Nullable`1 saledate) in D:\Aegis Project\BCInsight\BCInsight\BCInsight.DAL\BCInsight.Context.cs:line 231
+   at BCInsight.Controllers.HomeController.Index() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 42
+ERROR 7 BCInsight.Controllers.HomeController - System.Data.Entity.Core.EntityCommandCompilationException: An error occurred while preparing the command definition. See the inner exception for details. ---> System.InvalidOperationException: The function import 'bcInsightEntities.SP_TopSalePersonDashboard' cannot be executed because it is not mapped to a store function.
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.GetTargetFunctionMapping(DbFunctionCommandTree functionCommandTree)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.CreateCommandDefinition()
+   at System.Data.Entity.Core.EntityClient.EntityCommand.TryGetEntityCommandDefinitionFromQueryCache(EntityCommandDefinition& entityCommandDefinition)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.GetCommandDefinition()
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateFunctionObjectResult[TElement](EntityCommand entityCommand, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ExecutionOptions executionOptions)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__46()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__45()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, MergeOption mergeOption, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ObjectParameter[] parameters)
+   at BCInsight.DAL.bcInsightEntities.SP_TopSalePersonDashboard(Nullable`1 saledate) in D:\Aegis Project\BCInsight\BCInsight\BCInsight.DAL\BCInsight.Context.cs:line 231
+   at BCInsight.Controllers.HomeController.Index() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 42
+ERROR 5 BCInsight.Controllers.HomeController - System.DivideByZeroException: Attempted to divide by zero.
+   at System.Decimal.FCallDivide(Decimal& d1, Decimal& d2)
+   at System.Decimal.op_Division(Decimal d1, Decimal d2)
+   at BCInsight.Controllers.HomeController.getdailynetsaleamt() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 142
+ERROR 6 BCInsight.Controllers.HomeController - System.DivideByZeroException: Attempted to divide by zero.
+   at BCInsight.Controllers.HomeController.getdailyStockUpdate() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 201
+ERROR 6 BCInsight.Controllers.HomeController - System.Data.Entity.Core.EntityCommandCompilationException: An error occurred while preparing the command definition. See the inner exception for details. ---> System.InvalidOperationException: The function import 'bcInsightEntities.SP_DasboardStockUpdatechart' cannot be executed because it is not mapped to a store function.
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.GetTargetFunctionMapping(DbFunctionCommandTree functionCommandTree)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.CreateCommandDefinition()
+   at System.Data.Entity.Core.EntityClient.EntityCommand.TryGetEntityCommandDefinitionFromQueryCache(EntityCommandDefinition& entityCommandDefinition)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.GetCommandDefinition()
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateFunctionObjectResult[TElement](EntityCommand entityCommand, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ExecutionOptions executionOptions)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__46()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__45()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, MergeOption mergeOption, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ObjectParameter[] parameters)
+   at BCInsight.DAL.bcInsightEntities.SP_DasboardStockUpdatechart(Nullable`1 stockdate) in D:\Aegis Project\BCInsight\BCInsight\BCInsight.DAL\BCInsight.Context.cs:line 240
+   at BCInsight.Controllers.HomeController.getstockUpdatechart() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 471
+ERROR 5 BCInsight.Controllers.HomeController - System.Data.Entity.Core.EntityCommandCompilationException: An error occurred while preparing the command definition. See the inner exception for details. ---> System.InvalidOperationException: The function import 'bcInsightEntities.SP_DasboardStockUpdatechart' cannot be executed because it is not mapped to a store function.
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.GetTargetFunctionMapping(DbFunctionCommandTree functionCommandTree)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.CreateCommandDefinition()
+   at System.Data.Entity.Core.EntityClient.EntityCommand.TryGetEntityCommandDefinitionFromQueryCache(EntityCommandDefinition& entityCommandDefinition)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.GetCommandDefinition()
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateFunctionObjectResult[TElement](EntityCommand entityCommand, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ExecutionOptions executionOptions)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__46()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__45()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, MergeOption mergeOption, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ObjectParameter[] parameters)
+   at BCInsight.DAL.bcInsightEntities.SP_DasboardStockUpdatechart(Nullable`1 stockdate) in D:\Aegis Project\BCInsight\BCInsight\BCInsight.DAL\BCInsight.Context.cs:line 240
+   at BCInsight.Controllers.HomeController.getstockUpdatechart() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 471
+ERROR 5 BCInsight.Controllers.HomeController - System.Data.Entity.Core.EntityCommandCompilationException: An error occurred while preparing the command definition. See the inner exception for details. ---> System.InvalidOperationException: The function import 'bcInsightEntities.SP_TopSalePersonDashboard' cannot be executed because it is not mapped to a store function.
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.GetTargetFunctionMapping(DbFunctionCommandTree functionCommandTree)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.CreateCommandDefinition()
+   at System.Data.Entity.Core.EntityClient.EntityCommand.TryGetEntityCommandDefinitionFromQueryCache(EntityCommandDefinition& entityCommandDefinition)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.GetCommandDefinition()
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateFunctionObjectResult[TElement](EntityCommand entityCommand, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ExecutionOptions executionOptions)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__46()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__45()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, MergeOption mergeOption, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ObjectParameter[] parameters)
+   at BCInsight.DAL.bcInsightEntities.SP_TopSalePersonDashboard(Nullable`1 saledate) in D:\Aegis Project\BCInsight\BCInsight\BCInsight.DAL\BCInsight.Context.cs:line 231
+   at BCInsight.Controllers.HomeController.Index() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 42
+ERROR 11 BCInsight.Controllers.HomeController - System.DivideByZeroException: Attempted to divide by zero.
+   at System.Decimal.FCallDivide(Decimal& d1, Decimal& d2)
+   at System.Decimal.op_Division(Decimal d1, Decimal d2)
+   at BCInsight.Controllers.HomeController.getdailynetsaleamt() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 142
+ERROR 15 BCInsight.Controllers.HomeController - System.DivideByZeroException: Attempted to divide by zero.
+   at BCInsight.Controllers.HomeController.getdailyStockUpdate() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 201
+ERROR 15 BCInsight.Controllers.HomeController - System.Data.Entity.Core.EntityCommandCompilationException: An error occurred while preparing the command definition. See the inner exception for details. ---> System.InvalidOperationException: The function import 'bcInsightEntities.SP_DasboardStockUpdatechart' cannot be executed because it is not mapped to a store function.
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.GetTargetFunctionMapping(DbFunctionCommandTree functionCommandTree)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.CreateCommandDefinition()
+   at System.Data.Entity.Core.EntityClient.EntityCommand.TryGetEntityCommandDefinitionFromQueryCache(EntityCommandDefinition& entityCommandDefinition)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.GetCommandDefinition()
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateFunctionObjectResult[TElement](EntityCommand entityCommand, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ExecutionOptions executionOptions)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__46()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__45()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, MergeOption mergeOption, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ObjectParameter[] parameters)
+   at BCInsight.DAL.bcInsightEntities.SP_DasboardStockUpdatechart(Nullable`1 stockdate) in D:\Aegis Project\BCInsight\BCInsight\BCInsight.DAL\BCInsight.Context.cs:line 240
+   at BCInsight.Controllers.HomeController.getstockUpdatechart() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 471
+ERROR 14 BCInsight.Controllers.HomeController - System.Data.Entity.Core.EntityCommandCompilationException: An error occurred while preparing the command definition. See the inner exception for details. ---> System.InvalidOperationException: The function import 'bcInsightEntities.SP_DasboardStockUpdatechart' cannot be executed because it is not mapped to a store function.
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.GetTargetFunctionMapping(DbFunctionCommandTree functionCommandTree)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.CreateCommandDefinition()
+   at System.Data.Entity.Core.EntityClient.EntityCommand.TryGetEntityCommandDefinitionFromQueryCache(EntityCommandDefinition& entityCommandDefinition)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.GetCommandDefinition()
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateFunctionObjectResult[TElement](EntityCommand entityCommand, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ExecutionOptions executionOptions)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__46()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__45()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, MergeOption mergeOption, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ObjectParameter[] parameters)
+   at BCInsight.DAL.bcInsightEntities.SP_DasboardStockUpdatechart(Nullable`1 stockdate) in D:\Aegis Project\BCInsight\BCInsight\BCInsight.DAL\BCInsight.Context.cs:line 240
+   at BCInsight.Controllers.HomeController.getstockUpdatechart() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 471
+ERROR 18 BCInsight.Controllers.HomeController - System.Data.Entity.Core.EntityCommandCompilationException: An error occurred while preparing the command definition. See the inner exception for details. ---> System.InvalidOperationException: The function import 'bcInsightEntities.SP_TopSalePersonDashboard' cannot be executed because it is not mapped to a store function.
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.GetTargetFunctionMapping(DbFunctionCommandTree functionCommandTree)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.CreateCommandDefinition()
+   at System.Data.Entity.Core.EntityClient.EntityCommand.TryGetEntityCommandDefinitionFromQueryCache(EntityCommandDefinition& entityCommandDefinition)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.GetCommandDefinition()
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateFunctionObjectResult[TElement](EntityCommand entityCommand, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ExecutionOptions executionOptions)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__46()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__45()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, MergeOption mergeOption, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ObjectParameter[] parameters)
+   at BCInsight.DAL.bcInsightEntities.SP_TopSalePersonDashboard(Nullable`1 saledate) in D:\Aegis Project\BCInsight\BCInsight\BCInsight.DAL\BCInsight.Context.cs:line 231
+   at BCInsight.Controllers.HomeController.Index() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 42
+ERROR 28 BCInsight.Controllers.HomeController - System.DivideByZeroException: Attempted to divide by zero.
+   at System.Decimal.FCallDivide(Decimal& d1, Decimal& d2)
+   at System.Decimal.op_Division(Decimal d1, Decimal d2)
+   at BCInsight.Controllers.HomeController.getdailynetsaleamt() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 142
+ERROR 18 BCInsight.Controllers.HomeController - System.DivideByZeroException: Attempted to divide by zero.
+   at BCInsight.Controllers.HomeController.getdailyStockUpdate() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 201
+ERROR 28 BCInsight.Controllers.HomeController - System.Data.Entity.Core.EntityCommandCompilationException: An error occurred while preparing the command definition. See the inner exception for details. ---> System.InvalidOperationException: The function import 'bcInsightEntities.SP_DasboardStockUpdatechart' cannot be executed because it is not mapped to a store function.
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.GetTargetFunctionMapping(DbFunctionCommandTree functionCommandTree)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.CreateCommandDefinition()
+   at System.Data.Entity.Core.EntityClient.EntityCommand.TryGetEntityCommandDefinitionFromQueryCache(EntityCommandDefinition& entityCommandDefinition)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.GetCommandDefinition()
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateFunctionObjectResult[TElement](EntityCommand entityCommand, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ExecutionOptions executionOptions)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__46()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__45()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, MergeOption mergeOption, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ObjectParameter[] parameters)
+   at BCInsight.DAL.bcInsightEntities.SP_DasboardStockUpdatechart(Nullable`1 stockdate) in D:\Aegis Project\BCInsight\BCInsight\BCInsight.DAL\BCInsight.Context.cs:line 240
+   at BCInsight.Controllers.HomeController.getstockUpdatechart() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 471
+ERROR 16 BCInsight.Controllers.HomeController - System.Data.Entity.Core.EntityCommandCompilationException: An error occurred while preparing the command definition. See the inner exception for details. ---> System.InvalidOperationException: The function import 'bcInsightEntities.SP_DasboardStockUpdatechart' cannot be executed because it is not mapped to a store function.
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.GetTargetFunctionMapping(DbFunctionCommandTree functionCommandTree)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.CreateCommandDefinition()
+   at System.Data.Entity.Core.EntityClient.EntityCommand.TryGetEntityCommandDefinitionFromQueryCache(EntityCommandDefinition& entityCommandDefinition)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.GetCommandDefinition()
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateFunctionObjectResult[TElement](EntityCommand entityCommand, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ExecutionOptions executionOptions)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__46()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__45()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, MergeOption mergeOption, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ObjectParameter[] parameters)
+   at BCInsight.DAL.bcInsightEntities.SP_DasboardStockUpdatechart(Nullable`1 stockdate) in D:\Aegis Project\BCInsight\BCInsight\BCInsight.DAL\BCInsight.Context.cs:line 240
+   at BCInsight.Controllers.HomeController.getstockUpdatechart() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 471
+ERROR 12 BCInsight.Controllers.HomeController - System.Data.Entity.Core.EntityCommandCompilationException: An error occurred while preparing the command definition. See the inner exception for details. ---> System.InvalidOperationException: The function import 'bcInsightEntities.SP_TopSalePersonDashboard' cannot be executed because it is not mapped to a store function.
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.GetTargetFunctionMapping(DbFunctionCommandTree functionCommandTree)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.CreateCommandDefinition()
+   at System.Data.Entity.Core.EntityClient.EntityCommand.TryGetEntityCommandDefinitionFromQueryCache(EntityCommandDefinition& entityCommandDefinition)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.GetCommandDefinition()
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateFunctionObjectResult[TElement](EntityCommand entityCommand, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ExecutionOptions executionOptions)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__46()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__45()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, MergeOption mergeOption, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ObjectParameter[] parameters)
+   at BCInsight.DAL.bcInsightEntities.SP_TopSalePersonDashboard(Nullable`1 saledate) in D:\Aegis Project\BCInsight\BCInsight\BCInsight.DAL\BCInsight.Context.cs:line 231
+   at BCInsight.Controllers.HomeController.Index() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 42
+ERROR 16 BCInsight.Controllers.HomeController - System.DivideByZeroException: Attempted to divide by zero.
+   at BCInsight.Controllers.HomeController.getdailyStockUpdate() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 201
+ERROR 31 BCInsight.Controllers.HomeController - System.Data.Entity.Core.EntityCommandCompilationException: An error occurred while preparing the command definition. See the inner exception for details. ---> System.InvalidOperationException: The function import 'bcInsightEntities.SP_DasboardStockUpdatechart' cannot be executed because it is not mapped to a store function.
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.GetTargetFunctionMapping(DbFunctionCommandTree functionCommandTree)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.CreateCommandDefinition()
+   at System.Data.Entity.Core.EntityClient.EntityCommand.TryGetEntityCommandDefinitionFromQueryCache(EntityCommandDefinition& entityCommandDefinition)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.GetCommandDefinition()
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateFunctionObjectResult[TElement](EntityCommand entityCommand, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ExecutionOptions executionOptions)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__46()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__45()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, MergeOption mergeOption, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ObjectParameter[] parameters)
+   at BCInsight.DAL.bcInsightEntities.SP_DasboardStockUpdatechart(Nullable`1 stockdate) in D:\Aegis Project\BCInsight\BCInsight\BCInsight.DAL\BCInsight.Context.cs:line 240
+   at BCInsight.Controllers.HomeController.getstockUpdatechart() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 471
+ERROR 16 BCInsight.Controllers.HomeController - System.Data.Entity.Core.EntityCommandCompilationException: An error occurred while preparing the command definition. See the inner exception for details. ---> System.InvalidOperationException: The function import 'bcInsightEntities.SP_DasboardStockUpdatechart' cannot be executed because it is not mapped to a store function.
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.GetTargetFunctionMapping(DbFunctionCommandTree functionCommandTree)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.CreateCommandDefinition()
+   at System.Data.Entity.Core.EntityClient.EntityCommand.TryGetEntityCommandDefinitionFromQueryCache(EntityCommandDefinition& entityCommandDefinition)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.GetCommandDefinition()
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateFunctionObjectResult[TElement](EntityCommand entityCommand, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ExecutionOptions executionOptions)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__46()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__45()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, MergeOption mergeOption, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ObjectParameter[] parameters)
+   at BCInsight.DAL.bcInsightEntities.SP_DasboardStockUpdatechart(Nullable`1 stockdate) in D:\Aegis Project\BCInsight\BCInsight\BCInsight.DAL\BCInsight.Context.cs:line 240
+   at BCInsight.Controllers.HomeController.getstockUpdatechart() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 471
+ERROR 30 BCInsight.Controllers.HomeController - System.DivideByZeroException: Attempted to divide by zero.
+   at System.Decimal.FCallDivide(Decimal& d1, Decimal& d2)
+   at System.Decimal.op_Division(Decimal d1, Decimal d2)
+   at BCInsight.Controllers.HomeController.getdailynetsaleamt() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 142
+ERROR 5 BCInsight.Controllers.HomeController - System.Data.Entity.Core.EntityCommandCompilationException: An error occurred while preparing the command definition. See the inner exception for details. ---> System.InvalidOperationException: The function import 'bcInsightEntities.SP_TopSalePersonDashboard' cannot be executed because it is not mapped to a store function.
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.GetTargetFunctionMapping(DbFunctionCommandTree functionCommandTree)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.CreateCommandDefinition()
+   at System.Data.Entity.Core.EntityClient.EntityCommand.TryGetEntityCommandDefinitionFromQueryCache(EntityCommandDefinition& entityCommandDefinition)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.GetCommandDefinition()
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateFunctionObjectResult[TElement](EntityCommand entityCommand, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ExecutionOptions executionOptions)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__46()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__45()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, MergeOption mergeOption, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ObjectParameter[] parameters)
+   at BCInsight.DAL.bcInsightEntities.SP_TopSalePersonDashboard(Nullable`1 saledate) in D:\Aegis Project\BCInsight\BCInsight\BCInsight.DAL\BCInsight.Context.cs:line 231
+   at BCInsight.Controllers.HomeController.Index() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 42
+ERROR 8 BCInsight.Controllers.HomeController - System.Data.Entity.Core.EntityCommandCompilationException: An error occurred while preparing the command definition. See the inner exception for details. ---> System.InvalidOperationException: The function import 'bcInsightEntities.SP_TopSalePersonDashboard' cannot be executed because it is not mapped to a store function.
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.GetTargetFunctionMapping(DbFunctionCommandTree functionCommandTree)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.CreateCommandDefinition()
+   at System.Data.Entity.Core.EntityClient.EntityCommand.TryGetEntityCommandDefinitionFromQueryCache(EntityCommandDefinition& entityCommandDefinition)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.GetCommandDefinition()
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateFunctionObjectResult[TElement](EntityCommand entityCommand, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ExecutionOptions executionOptions)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__46()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__45()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, MergeOption mergeOption, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ObjectParameter[] parameters)
+   at BCInsight.DAL.bcInsightEntities.SP_TopSalePersonDashboard(Nullable`1 saledate) in D:\Aegis Project\BCInsight\BCInsight\BCInsight.DAL\BCInsight.Context.cs:line 231
+   at BCInsight.Controllers.HomeController.Index() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 42
+ERROR 5 BCInsight.Controllers.HomeController - System.DivideByZeroException: Attempted to divide by zero.
+   at System.Decimal.FCallDivide(Decimal& d1, Decimal& d2)
+   at System.Decimal.op_Division(Decimal d1, Decimal d2)
+   at BCInsight.Controllers.HomeController.getdailynetsaleamt() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 142
+ERROR 8 BCInsight.Controllers.HomeController - System.Data.Entity.Core.EntityCommandCompilationException: An error occurred while preparing the command definition. See the inner exception for details. ---> System.InvalidOperationException: The function import 'bcInsightEntities.SP_DasboardStockUpdatechart' cannot be executed because it is not mapped to a store function.
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.GetTargetFunctionMapping(DbFunctionCommandTree functionCommandTree)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.CreateCommandDefinition()
+   at System.Data.Entity.Core.EntityClient.EntityCommand.TryGetEntityCommandDefinitionFromQueryCache(EntityCommandDefinition& entityCommandDefinition)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.GetCommandDefinition()
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateFunctionObjectResult[TElement](EntityCommand entityCommand, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ExecutionOptions executionOptions)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__46()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__45()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, MergeOption mergeOption, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ObjectParameter[] parameters)
+   at BCInsight.DAL.bcInsightEntities.SP_DasboardStockUpdatechart(Nullable`1 stockdate) in D:\Aegis Project\BCInsight\BCInsight\BCInsight.DAL\BCInsight.Context.cs:line 240
+   at BCInsight.Controllers.HomeController.getstockUpdatechart() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 471
+ERROR 5 BCInsight.Controllers.HomeController - System.Data.Entity.Core.EntityCommandCompilationException: An error occurred while preparing the command definition. See the inner exception for details. ---> System.InvalidOperationException: The function import 'bcInsightEntities.SP_DasboardStockUpdatechart' cannot be executed because it is not mapped to a store function.
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.GetTargetFunctionMapping(DbFunctionCommandTree functionCommandTree)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.CreateCommandDefinition()
+   at System.Data.Entity.Core.EntityClient.EntityCommand.TryGetEntityCommandDefinitionFromQueryCache(EntityCommandDefinition& entityCommandDefinition)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.GetCommandDefinition()
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateFunctionObjectResult[TElement](EntityCommand entityCommand, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ExecutionOptions executionOptions)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__46()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__45()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, MergeOption mergeOption, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ObjectParameter[] parameters)
+   at BCInsight.DAL.bcInsightEntities.SP_DasboardStockUpdatechart(Nullable`1 stockdate) in D:\Aegis Project\BCInsight\BCInsight\BCInsight.DAL\BCInsight.Context.cs:line 240
+   at BCInsight.Controllers.HomeController.getstockUpdatechart() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 471
+ERROR 9 BCInsight.Controllers.HomeController - System.DivideByZeroException: Attempted to divide by zero.
+   at BCInsight.Controllers.HomeController.getdailyStockUpdate() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 201
+ERROR 10 BCInsight.Controllers.HomeController - System.Data.Entity.Core.EntityCommandCompilationException: An error occurred while preparing the command definition. See the inner exception for details. ---> System.InvalidOperationException: The function import 'bcInsightEntities.SP_DasboardStockUpdatechart' cannot be executed because it is not mapped to a store function.
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.GetTargetFunctionMapping(DbFunctionCommandTree functionCommandTree)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.CreateCommandDefinition()
+   at System.Data.Entity.Core.EntityClient.EntityCommand.TryGetEntityCommandDefinitionFromQueryCache(EntityCommandDefinition& entityCommandDefinition)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.GetCommandDefinition()
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateFunctionObjectResult[TElement](EntityCommand entityCommand, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ExecutionOptions executionOptions)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__46()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__45()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, MergeOption mergeOption, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ObjectParameter[] parameters)
+   at BCInsight.DAL.bcInsightEntities.SP_DasboardStockUpdatechart(Nullable`1 stockdate) in D:\Aegis Project\BCInsight\BCInsight\BCInsight.DAL\BCInsight.Context.cs:line 240
+   at BCInsight.Controllers.HomeController.getstockUpdatechart() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 471
+ERROR 11 BCInsight.Controllers.HomeController - System.Data.Entity.Core.EntityCommandCompilationException: An error occurred while preparing the command definition. See the inner exception for details. ---> System.InvalidOperationException: The function import 'bcInsightEntities.SP_DasboardStockUpdatechart' cannot be executed because it is not mapped to a store function.
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.GetTargetFunctionMapping(DbFunctionCommandTree functionCommandTree)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.CreateCommandDefinition()
+   at System.Data.Entity.Core.EntityClient.EntityCommand.TryGetEntityCommandDefinitionFromQueryCache(EntityCommandDefinition& entityCommandDefinition)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.GetCommandDefinition()
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateFunctionObjectResult[TElement](EntityCommand entityCommand, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ExecutionOptions executionOptions)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__46()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__45()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, MergeOption mergeOption, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ObjectParameter[] parameters)
+   at BCInsight.DAL.bcInsightEntities.SP_DasboardStockUpdatechart(Nullable`1 stockdate) in D:\Aegis Project\BCInsight\BCInsight\BCInsight.DAL\BCInsight.Context.cs:line 240
+   at BCInsight.Controllers.HomeController.getstockUpdatechart() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 471
+ERROR 7 BCInsight.Controllers.HomeController - System.Data.Entity.Core.EntityCommandCompilationException: An error occurred while preparing the command definition. See the inner exception for details. ---> System.InvalidOperationException: The function import 'bcInsightEntities.SP_DasboardStockUpdatechart' cannot be executed because it is not mapped to a store function.
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.GetTargetFunctionMapping(DbFunctionCommandTree functionCommandTree)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.CreateCommandDefinition()
+   at System.Data.Entity.Core.EntityClient.EntityCommand.TryGetEntityCommandDefinitionFromQueryCache(EntityCommandDefinition& entityCommandDefinition)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.GetCommandDefinition()
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateFunctionObjectResult[TElement](EntityCommand entityCommand, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ExecutionOptions executionOptions)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__46()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__45()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, MergeOption mergeOption, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ObjectParameter[] parameters)
+   at BCInsight.DAL.bcInsightEntities.SP_DasboardStockUpdatechart(Nullable`1 stockdate) in D:\Aegis Project\BCInsight\BCInsight\BCInsight.DAL\BCInsight.Context.cs:line 240
+   at BCInsight.Controllers.HomeController.getstockUpdatechart() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 471
+ERROR 11 BCInsight.Controllers.HomeController - System.Data.Entity.Core.EntityCommandCompilationException: An error occurred while preparing the command definition. See the inner exception for details. ---> System.InvalidOperationException: The function import 'bcInsightEntities.SP_DasboardStockUpdatechart' cannot be executed because it is not mapped to a store function.
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.GetTargetFunctionMapping(DbFunctionCommandTree functionCommandTree)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition..ctor(DbProviderFactory storeProviderFactory, DbCommandTree commandTree, DbInterceptionContext interceptionContext, IDbDependencyResolver resolver, BridgeDataReaderFactory bridgeDataReaderFactory, ColumnMapFactory columnMapFactory)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.CreateCommandDefinition()
+   at System.Data.Entity.Core.EntityClient.EntityCommand.TryGetEntityCommandDefinitionFromQueryCache(EntityCommandDefinition& entityCommandDefinition)
+   at System.Data.Entity.Core.EntityClient.EntityCommand.GetCommandDefinition()
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateFunctionObjectResult[TElement](EntityCommand entityCommand, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ExecutionOptions executionOptions)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__46()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__45()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, MergeOption mergeOption, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ObjectParameter[] parameters)
+   at BCInsight.DAL.bcInsightEntities.SP_DasboardStockUpdatechart(Nullable`1 stockdate) in D:\Aegis Project\BCInsight\BCInsight\BCInsight.DAL\BCInsight.Context.cs:line 240
+   at BCInsight.Controllers.HomeController.getstockUpdatechart() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 471

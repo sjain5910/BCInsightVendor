@@ -1,0 +1,33 @@
+INFO 6 BCInsight.Controllers.HomeController - User: DESKTOP-LPOUG0E & IP: ::1
+INFO 6 BCInsight.Controllers.HomeController - User: DESKTOP-LPOUG0E & IP: ::1
+INFO 6 BCInsight.Controllers.HomeController - User: DESKTOP-LPOUG0E & IP: ::1
+INFO 5 BCInsight.Controllers.HomeController - User: DESKTOP-LPOUG0E & IP: ::1
+INFO 7 BCInsight.Controllers.HomeController - User: DESKTOP-LPOUG0E & IP: ::1
+INFO 5 BCInsight.Controllers.HomeController - User: DESKTOP-LPOUG0E & IP: ::1
+INFO 5 BCInsight.Controllers.HomeController - User: DESKTOP-LPOUG0E & IP: ::1
+INFO 5 BCInsight.Controllers.HomeController - User: DESKTOP-LPOUG0E & IP: ::1
+INFO 5 BCInsight.Controllers.HomeController - User: DESKTOP-LPOUG0E & IP: ::1
+INFO 5 BCInsight.Controllers.HomeController - User: DESKTOP-LPOUG0E & IP: ::1
+INFO 5 BCInsight.Controllers.HomeController - User: DESKTOP-LPOUG0E & IP: ::1
+INFO 5 BCInsight.Controllers.HomeController - User: DESKTOP-LPOUG0E & IP: ::1
+INFO 6 BCInsight.Controllers.HomeController - User: DESKTOP-LPOUG0E & IP: ::1
+INFO 6 BCInsight.Controllers.HomeController - User: DESKTOP-LPOUG0E & IP: ::1
+INFO 6 BCInsight.Controllers.HomeController - User: DESKTOP-LPOUG0E & IP: ::1
+INFO 5 BCInsight.Controllers.HomeController - User: DESKTOP-LPOUG0E & IP: ::1
+INFO 5 BCInsight.Controllers.HomeController - User: DESKTOP-LPOUG0E & IP: ::1
+INFO 6 BCInsight.Controllers.HomeController - User: DESKTOP-LPOUG0E & IP: ::1
+INFO 5 BCInsight.Controllers.HomeController - User: DESKTOP-LPOUG0E & IP: ::1
+INFO 6 BCInsight.Controllers.HomeController - User: DESKTOP-LPOUG0E & IP: ::1
+INFO 6 BCInsight.Controllers.HomeController - User: DESKTOP-LPOUG0E & IP: ::1
+INFO 6 BCInsight.Controllers.HomeController - User: DESKTOP-LPOUG0E & IP: ::1
+INFO 6 BCInsight.Controllers.HomeController - User: DESKTOP-LPOUG0E & IP: ::1
+INFO 6 BCInsight.Controllers.HomeController - User: DESKTOP-LPOUG0E & IP: ::1
+INFO 5 BCInsight.Controllers.HomeController - User: DESKTOP-LPOUG0E & IP: ::1
+ERROR 8 BCInsight.Controllers.API.APIAuthController - System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Controllers.API.APIAuthController.Login(userViewModel model) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\API\APIAuthController.cs:line 37
+INFO 6 BCInsight.Controllers.HomeController - User: DESKTOP-LPOUG0E & IP: ::1
+ERROR 6 BCInsight.Controllers.API.APIAuthController - System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Controllers.API.APIAuthController.Login(userViewModel model) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\API\APIAuthController.cs:line 38
+INFO 5 BCInsight.Controllers.HomeController - User: DESKTOP-LPOUG0E & IP: ::1
+INFO 6 BCInsight.Controllers.HomeController - User: DESKTOP-LPOUG0E & IP: ::1
+INFO 5 BCInsight.Controllers.HomeController - User: DESKTOP-LPOUG0E & IP: ::1

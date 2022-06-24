@@ -1,0 +1,50 @@
+INFO 5 BCInsight.Controllers.HomeController - User: DESKTOP-LPOUG0E & IP: ::1
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\HelperClass\Utility.cs:line 19
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : Object reference not set to an instance of an object.
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\HelperClass\Utility.cs:line 19
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : Object reference not set to an instance of an object.
+INFO 8 BCInsight.Controllers.HomeController - User: DESKTOP-LPOUG0E & IP: ::1
+INFO 5 BCInsight.Controllers.HomeController - User: DESKTOP-LPOUG0E & IP: ::1
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\HelperClass\Utility.cs:line 19
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : Object reference not set to an instance of an object.
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\HelperClass\Utility.cs:line 19
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : Object reference not set to an instance of an object.
+INFO 14 BCInsight.Controllers.HomeController - User: DESKTOP-LPOUG0E & IP: ::1
+INFO 6 BCInsight.Controllers.HomeController - User: DESKTOP-LPOUG0E & IP: ::1
+ERROR 6 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\HelperClass\Utility.cs:line 19
+ERROR 6 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : Object reference not set to an instance of an object.
+ERROR 6 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\HelperClass\Utility.cs:line 19
+ERROR 6 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : Object reference not set to an instance of an object.
+INFO 14 BCInsight.Controllers.HomeController - User: DESKTOP-LPOUG0E & IP: ::1
+INFO 5 BCInsight.Controllers.HomeController - User: DESKTOP-LPOUG0E & IP: ::1
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\HelperClass\Utility.cs:line 19
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : Object reference not set to an instance of an object.
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\HelperClass\Utility.cs:line 19
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : Object reference not set to an instance of an object.
+INFO 10 BCInsight.Controllers.HomeController - User: DESKTOP-LPOUG0E & IP: ::1
+ERROR 6 BCInsight.Controllers.VendorMgmtController - System.FormatException: String was not recognized as a valid TimeSpan.
+   at System.Globalization.TimeSpanParse.TimeSpanResult.SetFailure(ParseFailureKind failure, String failureMessageID, Object failureMessageFormatArgument, String failureArgumentName)
+   at System.Globalization.TimeSpanParse.TimeSpanRawInfo.AddNum(TimeSpanToken num, TimeSpanResult& result)
+   at System.Globalization.TimeSpanParse.TimeSpanRawInfo.ProcessToken(TimeSpanToken& tok, TimeSpanResult& result)
+   at System.Globalization.TimeSpanParse.TryParseTimeSpan(String input, TimeSpanStandardStyles style, IFormatProvider formatProvider, TimeSpanResult& result)
+   at System.Globalization.TimeSpanParse.Parse(String input, IFormatProvider formatProvider)
+   at System.TimeSpan.Parse(String s)
+   at BCInsight.Controllers.VendorMgmtController.GetAttendancemanagementFromExcelRow(DataRow row)
+   at BCInsight.Controllers.VendorMgmtController.UploadExcel(HttpPostedFileBase upload_file)
+INFO 5 BCInsight.Controllers.HomeController - User: DESKTOP-LPOUG0E & IP: ::1
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\HelperClass\Utility.cs:line 19
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : Object reference not set to an instance of an object.
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\HelperClass\Utility.cs:line 19
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : Object reference not set to an instance of an object.
+INFO 10 BCInsight.Controllers.HomeController - User: DESKTOP-LPOUG0E & IP: ::1
+INFO 5 BCInsight.Controllers.HomeController - User: DESKTOP-LPOUG0E & IP: ::1

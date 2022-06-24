@@ -1,0 +1,16 @@
+ERROR 5 BCInsight.Controllers.QuantityMgmtController - System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Controllers.QuantityMgmtController.ImportExcel() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\QuantityMgmtController.cs:line 246
+ERROR 5 BCInsight.Controllers.QuantityMgmtController - System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Controllers.QuantityMgmtController.ImportExcel() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\QuantityMgmtController.cs:line 246
+ERROR 6 BCInsight.Controllers.QuantityMgmtController - System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Controllers.QuantityMgmtController.ImportExcel() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\QuantityMgmtController.cs:line 259
+ERROR 8 BCInsight.Controllers.QuantityMgmtController - System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Controllers.QuantityMgmtController.Index() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\QuantityMgmtController.cs:line 71
+ERROR 8 BCInsight.Controllers.QuantityMgmtController - System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Controllers.QuantityMgmtController.Index() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\QuantityMgmtController.cs:line 71
+ERROR 7 BCInsight.Controllers.QuantityMgmtController - System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Controllers.QuantityMgmtController.Index() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\QuantityMgmtController.cs:line 71
+ERROR 11 BCInsight.Controllers.QuantityMgmtController - System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Controllers.QuantityMgmtController.Index() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\QuantityMgmtController.cs:line 71
+ERROR 8 BCInsight.Controllers.QuantityMgmtController - System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Controllers.QuantityMgmtController.Index() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\QuantityMgmtController.cs:line 71

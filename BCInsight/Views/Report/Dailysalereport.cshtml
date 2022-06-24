@@ -1,0 +1,159 @@
+﻿@model BCInsight.Models.vendorDailySaleReportviewModel
+@{
+    ViewBag.Title = "Index";
+}
+@{
+    var BranNames = "[]";
+}
+<!-- Content Header (Page header) -->
+<div class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1 class="m-0">Daily Sales Report</h1>
+            </div><!-- /.col -->
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="@Url.Action("Index","Home")">Home</a></li>
+                    <li class="breadcrumb-item active">Daily Sales Report</li>
+                </ol>
+            </div><!-- /.col -->
+        </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+</div>
+<!-- /.content-header -->
+<div class="card card-info">
+    <div class="card-header">
+        <h3 class="card-title">Daily Sales Report &nbsp; (@Model.processdate)</h3>
+    </div>
+    <div class="card-body">       
+            <div class="card-body">
+                <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Start Date</label>
+                    <div class="col-sm-10">
+                        <div class="input-group date" id="saledatestr" data-target-input="nearest">
+                            @Html.TextBoxFor(c => c.StartDate, "{0:dd-MM-yyyy}", new { @type = "text", @class = "form-control datetimepicker-readonly", data_toggle = "datetimepicker", data_target = "datetimepicker", @readonly = "Readonly", placeholder = "Select Start Date", @maxLength = "10" })
+                            <div class="input-group-append" data-target="#datetimepicker" data-toggle="datetimepicker">
+                                <div class="input-group-text" data-target="#datetimepicker" data-toggle="datetimepicker"><i class="fa fa-calendar"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">End Date</label>
+                    <div class="col-sm-10">
+                        <div class="input-group date" id="saledatestr" data-target-input="nearest">
+                            @Html.TextBoxFor(c => c.EndDate, "{0:dd-MM-yyyy}", new { @type = "text", @class = "form-control datetimepicker-readonly", data_toggle = "datetimepicker", data_target = "datetimepicker", @readonly = "Readonly", placeholder = "Select End Date", @maxLength = "10" })
+                            <div class="input-group-append" data-target="#datetimepicker" data-toggle="datetimepicker">
+                                <div class="input-group-text" data-target="#datetimepicker" data-toggle="datetimepicker"><i class="fa fa-calendar"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword3" class="col-sm-2 col-form-label">Brand Names</label>
+                    <div class="col-sm-10">
+                        @Html.DropDownList("Brand_names", new SelectList(Enumerable.Empty<SelectListItem>(), Model.BrandnamesList), new { @class = "form-control select2bs4", @multiple = "multiple", @required = "required", placeholder = "All", @id = "Brand_names", @style = "width: 100%;" })
+                    </div>
+                </div>
+            </div>
+            <!-- /.card-body -->
+            <div class="card-footer">
+
+                <button type="button" id="dailysalerpt" class="btn btn-primary">Generate</button>
+
+                <button type="submit" id="btnExport" class="btn btn-primary">Export</button>
+            </div>
+    </div>
+</div>
+<div class="dailysalereport">
+
+</div>
+
+<!-- jQuery -->
+<script src="~/plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="~/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="https://rawgit.com/unconditional/jquery-table2excel/master/src/jquery.table2excel.js"></script>
+<script type="text/javascript">
+    $(function () {
+
+         //Initialize Select2 Elements
+        $('.select2').select2()
+
+        //Initialize Select2 Elements
+        $('.select2bs4').select2({
+            theme: 'bootstrap4'
+        })
+        //Date range picker
+
+        $('#StartDate').datetimepicker({
+            format: 'DD-MM-YYYY',
+        });
+        $('#EndDate').datetimepicker({
+            format: 'DD-MM-YYYY',
+        });
+    })
+
+      $("#dailysalerpt").click(function () {
+        debugger
+        var datasend = { brands: "", Startdate: $("#StartDate").val(), Enddate: $("#EndDate").val(), selectedbrands: $(".select2bs4").val() };
+        datasend.brands = datasend.selectedbrands.toString();
+         $('#ajax-loader').show();
+         $.ajax({
+            type: "GET",
+            data: datasend,
+            url: '@Url.Action("getDailysalereport", "Report")',
+            success: function (response) {
+                debugger
+                $(".dailysalereport").html(response);
+                $('#ajax-loader').hide();
+            },
+             failure: function (response) {
+                $('#ajax-loader').hide();
+                alert(response.d);
+            },
+            complete: function () {
+                $('#ajax-loader').hide();
+            }
+        });
+    });
+    $("#btnExport").click(function () {
+        debugger;
+        var selectedbrands = $(".select2bs4").val();       
+        var brands = selectedbrands.toString();
+        brands = brands.replace(/&/g,'A_N_D')
+        var Startdate = $("#StartDate").val();
+        var Enddate = $("#EndDate").val();
+        var url = "/Report/ExportDailysalereport?StartDate=" + Startdate + "&EndDate=" + Enddate+ "&brands=" + brands;
+        window.location.href = url;
+    });
+
+    $(document).ready(function () {
+        debugger;
+        var data = JSON.parse("@BranNames".replace(/&quot;/g, '"'));
+        //var initials = [{ id: "4", text: "ITI", "selected": true }, { id: "23", text: "PARX", "selected": true }];
+        var ddlBrandsSelect2 = $('#Brand_names');
+        ddlBrandsSelect2.select2({
+            data: data,
+            ajax: {
+                url: '/Report/GetVendorBrandList',
+                width: 'resolve',
+                data: function (params) {
+                    return {
+                        q: params.term// search term
+                    };
+                },
+                processResults: function (data) {
+                    return {
+                        results: data.items
+                    };
+                },
+                minimumInputLength: 2,
+                width: 'resolve'
+            },
+        });
+    });
+
+
+</script>

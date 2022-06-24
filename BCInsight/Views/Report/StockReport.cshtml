@@ -1,0 +1,160 @@
+﻿@model BCInsight.Models.vendorPortalStockReportViewModel
+@{
+    ViewBag.Title = "Index";
+    var selected = Model.stockdate;
+}
+@{
+    var BranNames = "[]";
+}
+<!-- Content Header (Page header) -->
+<div class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1 class="m-0">Stock Report</h1>
+            </div><!-- /.col -->
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="@Url.Action("Index","Home")">Home</a></li>
+                    <li class="breadcrumb-item active">Stock Report</li>
+                </ol>
+            </div><!-- /.col -->
+
+
+        </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+</div>
+<!-- /.content-header -->
+<div class="card card-info">
+    <div class="card-header">
+        <h3 id="titlestock" class="card-title">Stock Report</h3>
+    </div>
+    <div class="card-body">
+
+        <div class="card-body">
+            <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Site Name <span class="requiredSign">*</span></label>
+                <div class="col-sm-10">
+                    @Html.DropDownListFor(model => model.siteid, new SelectList(ViewBag.SiteNames, "Value", "Text"), "All", new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.siteid, "", new { @class = "error" })
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Date</label>
+                <div class="col-sm-10">
+                    <div class="input-group date" id="saledatestr" data-target-input="nearest">
+                        @Html.TextBoxFor(c => c.stockdate, "{0:dd-MM-yyyy}", new { @type = "text", @class = "form-control datetimepicker-readonly", data_toggle = "datetimepicker", data_target = "datetimepicker", @readonly = "Readonly", placeholder = "Select Date", @maxLength = "10" })
+                        <div class="input-group-append" data-target="#datetimepicker" data-toggle="datetimepicker">
+                            <div class="input-group-text" data-target="#datetimepicker" data-toggle="datetimepicker"><i class="fa fa-calendar"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword3" class="col-sm-2 col-form-label">Brand Names</label>
+                <div class="col-sm-10">
+                    @Html.DropDownList("Brand_names", new SelectList(Enumerable.Empty<SelectListItem>(), Model.BrandnamesList), new { @class = "form-control select2bs4", @multiple = "multiple", @required = "required", placeholder = "All", @id = "Brand_names", @style = "width: 100%;" })
+                </div>
+            </div>
+        </div>
+        <!-- /.card-body -->
+        <div class="card-footer">
+
+            <button type="button" id="stockreport" class="btn btn-primary">Generate</button>
+
+            <button type="button" id="btnExport" class="btn btn-primary">Export</button>
+
+        </div>
+
+    </div>
+</div>
+<div class="stockreportdiv">
+
+</div>
+
+<!-- jQuery -->
+<script src="~/plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="~/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="https://rawgit.com/unconditional/jquery-table2excel/master/src/jquery.table2excel.js"></script>
+<script type="text/javascript">
+
+    $(function () {
+          //Initialize Select2 Elements
+        $('.select2').select2()
+
+        //Initialize Select2 Elements
+        $('.select2bs4').select2({
+            theme: 'bootstrap4'
+        })
+            //Date range picker
+          var date = @selected;
+         $('#stockdate').datetimepicker({
+            // maxDate: moment(),
+             minDate: moment().add(-30, 'days'),
+             format: 'DD-MM-YYYY',
+             autoclose: true,
+         });
+        })
+
+    $("#stockreport").click(function () {
+        var datasend = { brands: $("#siteid").val(), siteid: $("#siteid").val(), stockdate:$("#stockdate").val(), selectedbrands: $(".select2bs4").val() };
+         datasend.brands = datasend.selectedbrands.toString();
+          $("#ajax-loader").show()
+         $.ajax({
+            type: "GET",
+            data: datasend,
+            url: '@Url.Action("getStockReport", "Report")',
+            success: function (response) {
+                debugger
+                $(".stockreportdiv").html(response);
+                $("#ajax-loader").hide()
+                document.getElementById("titlestock").innerHTML = "Stock Report (As of: " + datasend.stockdate + ")";
+            },
+            failure: function (response) {
+                alert(response.d);
+                 $("#ajax-loader").hide()
+            },
+            complete: function () {
+                $('#ajax-loader').hide();
+            }
+        });
+    });
+     $("#btnExport").click(function () {
+         debugger         
+        var selectedbrands= $(".select2bs4").val();
+         var brands = selectedbrands.toString();
+         brands = brands.replace(/&/g,'A_N_D')
+        var siteid = $("#siteid").val();
+        var stockdate = $("#stockdate").val();
+        var url = "/Report/ExportStockReport?siteid=" + siteid +"&stockdate="+stockdate + "&brands=" + brands;
+        window.location.href = url;
+    });
+
+    $(document).ready(function () {
+        debugger;
+        var data = JSON.parse("@BranNames".replace(/&quot;/g, '"'));
+        //var initials = [{ id: "4", text: "ITI", "selected": true }, { id: "23", text: "PARX", "selected": true }];
+        var ddlBrandsSelect2 = $('#Brand_names');
+        ddlBrandsSelect2.select2({
+            data: data,
+            ajax: {
+                url: '/Report/GetVendorBrandList',
+                width: 'resolve',
+                data: function (params) {
+                    return {
+                        q: params.term// search term
+                    };
+                },
+                processResults: function (data) {
+                    return {
+                        results: data.items
+                    };
+                },
+                minimumInputLength: 2,
+                width: 'resolve'
+            },
+        });
+    });
+
+</script>

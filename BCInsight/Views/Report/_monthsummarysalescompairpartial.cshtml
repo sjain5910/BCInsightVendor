@@ -1,0 +1,78 @@
+﻿@model BCInsight.Models.DaywisecomparisonofsalesVendorPortalViewModel
+@{
+    ViewBag.Title = "Index";
+}
+<div class="card card-info">
+    @foreach (var item in Model.siteNames)
+    {
+        <div class="card-header">
+            <h3 class="card-title">@item.siteName</h3>
+        </div>
+        <div class="card-body">
+            <div class="form-group">
+                @if (item.BrandSale.Count > 0)
+                {
+                    <table id="MonthSummary" class="display compact w-100 table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Brand</th>
+                                <th>Current Date @Convert.ToString(string.Format("{0:MMM-yyyy}", Model.saledate))</th>
+                                <th>Last Year @Convert.ToString(string.Format("{0:MMM-yyyy}", Model.presaledate)) </th>
+                                <th>Difference</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var brands in item.BrandSale)
+                            {
+                                <tr>
+                                    <td>@brands.Brand</td>
+                                    @if (@brands.CurrentDate > 0)
+                                    {
+                                        <td>@brands.CurrentDate</td>
+                                    }
+                                    else
+                                    {
+                                        <td>NA</td>
+                                    }
+                                    @if (@brands.LastDate > 0)
+                                    {
+                                        <td>@brands.LastDate</td>
+                                    }
+                                    else
+                                    {
+                                        <td>NA</td>
+                                    }
+                                    @if (@brands.differance > 0)
+                                    {
+                                        <td style="color:green">@brands.differance</td>
+                                    }
+                                    else if (@brands.differance < 0)
+                                    {
+                                        <td style="color:red">@brands.differance</td>
+                                    }
+                                    else
+                                    {
+                                        <td>-</td>
+                                    }
+
+
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                }
+                else
+                {
+                    <div align="center" id="msg" style="padding-top:15px;">
+                        <div class="alert alert-success">No Result found.</div>
+                    </div>
+                }
+
+
+            </div>
+
+        </div>
+    }
+
+
+</div>

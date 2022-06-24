@@ -1,0 +1,81 @@
+﻿
+@model  List<BCInsight.Models.pspfdSummaryReportViewModel>
+@{
+
+}
+
+<div class="card">
+    <div class="card-body">
+        @if (Model.Count > 0)
+        {
+            <div align="center" id="msg" style="padding-top:15px;">
+                <a href="@Url.Action("DownloadPspfdYearsummaryReport","Report")">Download <b>PSPFD Ranking Report</b></a>
+            </div>
+            <table id="pspfdrankingtable" class="display compact w-100 table-bordered">
+                <thead>
+                    <tr>
+                        <th>Brand Name</th>
+                        <th>Rank</th>
+                        <th>April</th>
+                        <th>May</th>
+                        <th>June</th>
+                        <th>July</th>
+                        <th>August</th>
+                        <th>September</th>
+                        <th>October</th>
+                        <th>November</th>
+                        <th>December</th>
+                        <th>January</th>
+                        <th>February</th>
+                        <th>March</th>
+                        <th>Avg</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.BrandName</td>
+                            <td>@item.Ranking</td>
+                            <td>@item.April</td>
+                            <td>@item.May</td>
+                            <td>@item.June</td>
+                            <td>@item.July</td>
+                            <td>@item.August</td>
+                            <td>@item.September</td>
+                            <td>@item.October</td>
+                            <td>@item.November</td>
+                            <td>@item.December</td>
+                            <td>@item.January</td>
+                            <td>@item.February</td>
+                            <td>@item.March</td>
+                            <td>@item.Avg</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+        else
+        {
+            <div align="center" id="msg" style="padding-top:15px;">
+                <div class="alert alert-success">PSPFD Ranking Report Result Not Found.</div>
+            </div>
+        }
+    </div>
+</div>
+<script src="~/plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="~/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script>
+    $(function () {
+        $("#pspfdrankingtable").DataTable({
+            "responsive": true,
+            "lengthChange": true,
+            "autoWidth": false,
+            "language": {
+                "emptyTable": "Record not found"
+            }
+        });
+    });
+</script>

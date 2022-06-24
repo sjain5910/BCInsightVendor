@@ -1,0 +1,142 @@
+﻿@model BCInsight.Models.DaywisecomparisonofsalesVendorPortalViewModel
+@{
+    ViewBag.Title = "Index";
+}
+@{
+    var BranNames = "[]";
+}
+
+<!-- Content Header (Page header) -->
+<div class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1 class="m-0">Month Summary Comparison of Sales</h1>
+            </div><!-- /.col -->
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="@Url.Action("Index","Home")">Home</a></li>
+                    <li class="breadcrumb-item active">Month Summary Comparison of Sales</li>
+                </ol>
+            </div><!-- /.col -->
+
+
+        </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+</div>
+<!-- /.content-header -->
+<div class="card card-info">
+    <div class="card-header">
+        <h3 class="card-title">Month Summary Comparison of Sales</h3>
+    </div>
+    <div class="card-body">
+        <div class="card-body">
+            <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Site Name <span class="requiredSign">*</span></label>
+                <div class="col-sm-10">
+                    @Html.DropDownListFor(model => model.siteid, new SelectList(ViewBag.SiteNames, "Value", "Text"), "All", new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.siteid, "", new { @class = "error" })
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword3" class="col-sm-2 col-form-label">Brand Names</label>
+                <div class="col-sm-10">
+                    @Html.DropDownList("Brand_names", new SelectList(Enumerable.Empty<SelectListItem>(), Model.BrandnamesList), new { @class = "form-control select2bs4", @multiple = "multiple", @required = "required", placeholder = "All", @id = "Brand_names", @style = "width: 100%;" })
+                </div>
+            </div>
+        </div>
+        <!-- /.card-body -->
+        <div class="card-footer">
+
+            <button type="button" id="monthsummarysales" class="btn btn-primary">Generate</button>
+
+            <button type="button" id="btnExport" class="btn btn-primary">Export</button>
+
+        </div>
+
+    </div>
+</div>
+<div class="Monthsummarysalecompair">
+
+</div>
+
+<!-- jQuery -->
+<script src="~/plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="~/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="https://rawgit.com/unconditional/jquery-table2excel/master/src/jquery.table2excel.js"></script>
+<script type="text/javascript">
+   
+    $(function () {
+        
+         //Initialize Select2 Elements
+        $('.select2').select2()
+
+        //Initialize Select2 Elements
+        $('.select2bs4').select2({
+            theme: 'bootstrap4'
+        })
+
+     })
+     $("#monthsummarysales").click(function () {
+        debugger
+        var datasend = { brands: $("#siteid").val(), siteid: $("#siteid").val(), selectedbrands: $(".select2bs4").val() };
+         datasend.brands = datasend.selectedbrands.toString();
+          $("#ajax-loader").show()
+         $.ajax({
+            type: "GET",
+            data: datasend,
+            url: '@Url.Action("MonthSummarysalescomparison", "Report")',
+            success: function (response) {
+                debugger
+                $(".Monthsummarysalecompair").html(response);
+                 $("#ajax-loader").hide()
+            },
+            failure: function (response) {
+                alert(response.d);
+                 $("#ajax-loader").hide()
+            },
+            complete: function () {
+                $('#ajax-loader').hide();
+            }
+        });
+    });
+     $("#btnExport").click(function () {
+        var selectedbrands= $(".select2bs4").val();
+         var brands = selectedbrands.toString();
+         brands = brands.replace(/&/g,'A_N_D')
+        var siteid = $("#siteid").val();         
+        var url = "/Report/ExportMonthSummarysale?siteid=" + siteid + "&brands=" + brands;
+         window.location.href = url;
+       
+    });
+
+    $(document).ready(function () {
+        debugger;        
+        var data = JSON.parse("@BranNames".replace(/&quot;/g, '"'));
+        //var initials = [{ id: "4", text: "ITI", "selected": true }, { id: "23", text: "PARX", "selected": true }];
+        var ddlBrandsSelect2 = $('#Brand_names');
+        ddlBrandsSelect2.select2({
+            data: data,
+            ajax: {
+                url: '/Report/GetVendorBrandList',
+                width: 'resolve',
+                data: function (params) {
+                    return {
+                        q: params.term// search term
+                    };
+                },
+                processResults: function (data) {
+                    return {
+                        results: data.items
+                    };
+                },
+                minimumInputLength: 2,
+                width: 'resolve'
+            },
+        });
+    });
+
+
+
+</script>

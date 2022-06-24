@@ -1,0 +1,175 @@
+﻿@using BCInsight.Web.HelperClass
+@{
+    var currentUser = Utility.CurrentLoginUser;
+    
+}
+<!-- Main Sidebar Container -->
+<aside class="main-sidebar sidebar-dark-primary elevation-4 text-sm ">
+    <!-- Brand Logo -->
+    <a href="@Url.Action("Index","Home")" class="brand-link text-center">
+        @*<img src="~/dist/img/AdminLTELogo.png" alt="BlueclubLogo" class="brand-image img-circle elevation-3" style="opacity: .8">*@
+        <img src="~/Images/ic_launcher.png" alt="BlueClub-Insight" class="brand-image img-circle elevation-3" style="opacity: .8; margin-top: 0.4rem;">
+
+        <span class="brand-text font-weight-light text-uppercase font-weight-bold" style="font-size:20Px">
+            BlueClub-Insight
+        </span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                <li class="nav-item menu-open">
+                    <a href="@Url.Action("Index","Home")" class="nav-link active">
+                        <i class="nav-icon fas fa-tachometer-alt"></i>
+                        <p>
+                            Dashboard
+                        </p>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-table"></i>
+                        <p>
+                            Reports
+                            <i class="fas fa-angle-left right"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="@Url.Action("Daywisecomparisonofsales","Report")" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Day wise Comparison of Sales</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="@Url.Action("MonthSummarycomparisonofsales","Report")" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Monthly Summary Comparison of Sales</p>
+                            </a>
+                        </li>
+                        @*<li class="nav-item">
+            <a href="@Url.Action("ReportWeekWiseSale","Report")" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Weekly Sales</p>
+            </a>
+        </li>*@
+                        <li class="nav-item">
+                            <a href="@Url.Action("StockReport","Report")" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Stock Report</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="@Url.Action("DatailsStockReportSitewise","Report")" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Detail Stock Report</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="@Url.Action("ReportWeekSaleCompare","Report")" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Weekly Sales Compare</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="@Url.Action("Dailysalereport","Report")" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Sales Report</p>
+                            </a>
+                        </li>
+                        @*<li class="nav-item">
+                            <a href="@Url.Action("PSPFDReport","Report")" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>PSPFD Ranking Report</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="@Url.Action("SellThroughReport","Report")" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Sell Through Ranking Report</p>
+                            </a>
+                        </li>*@
+                    </ul>
+                </li>
+
+                @*<li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-folder-open"></i>
+                        <p>
+                            Reports - New (V2)
+                            <i class="fas fa-angle-left right"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item underConstruction">
+                            <a href="@Url.Action("UnderConstruction","Home")" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Day wise Comparison of Sales</p>
+                            </a>
+                        </li>
+                        <li class="nav-item underConstruction">
+                            <a href="@Url.Action("UnderConstruction","Home")" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Monthly Summary Comparison of Sales</p>
+                            </a>
+                        </li>
+                        <li class="nav-item underConstruction">
+                            <a href="@Url.Action("UnderConstruction","Home")" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Weekly Sales</p>
+                            </a>
+                        </li>
+                        <li class="nav-item underConstruction">
+                            <a href="@Url.Action("UnderConstruction","Home")" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Stock Report</p>
+                            </a>
+                        </li>
+                        <li class="nav-item underConstruction">
+                            <a href="@Url.Action("UnderConstruction","Home")" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Detail Stock Report</p>
+                            </a>
+                        </li>
+                        <li class="nav-item underConstruction">
+                            <a href="@Url.Action("UnderConstruction","Home")" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Weekly Sales Compare</p>
+                            </a>
+                        </li>
+                        <li class="nav-item underConstruction">
+                            <a href="@Url.Action("UnderConstruction","Home")" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Sales Report</p>
+                            </a>
+                        </li>
+                        <li class="nav-item underConstruction">
+                            <a href="@Url.Action("UnderConstruction","Home")" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Attendance Report</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>*@
+
+                <li class="nav-item">
+                    <a href="@Url.Action("UpdateVendorManagement","VendorMgmt", new { id = currentUser.id })" class="nav-link">
+                        <i class="nav-icon fas fa-user"></i>
+                        <p>
+                            Vendor Profile Edit
+                            @*<i class="fas fa-angle-left right"></i>*@
+                        </p>
+                    </a>
+                </li>
+            </ul>
+
+
+        </nav>
+        <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+</aside>

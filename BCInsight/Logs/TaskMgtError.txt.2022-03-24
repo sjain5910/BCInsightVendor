@@ -1,0 +1,15 @@
+ERROR 5 BCInsight.Controllers.ReportController - System.OutOfMemoryException: Exception of type 'System.OutOfMemoryException' was thrown.
+   at System.Collections.Generic.List`1.set_Capacity(Int32 value)
+   at System.Collections.Generic.List`1.EnsureCapacity(Int32 min)
+   at System.Collections.Generic.List`1.Add(T item)
+   at BCInsight.Controllers.ReportController.ReportWeekWiseSale(Nullable`1 siteid) in D:\Aegis Project\BCInsightVendor\BCInsightVendor\BCInsight\Controllers\ReportController.cs:line 709
+ERROR 5 BCInsight.Controllers.ReportController - System.OutOfMemoryException: Exception of type 'System.OutOfMemoryException' was thrown.
+   at System.Collections.Generic.List`1.set_Capacity(Int32 value)
+   at System.Collections.Generic.List`1.EnsureCapacity(Int32 min)
+   at System.Collections.Generic.List`1.Add(T item)
+   at BCInsight.Controllers.ReportController.ReportWeekWiseSale(Nullable`1 siteid) in D:\Aegis Project\BCInsightVendor\BCInsightVendor\BCInsight\Controllers\ReportController.cs:line 709
+ERROR 6 BCInsight.Controllers.ReportController - System.OutOfMemoryException: Exception of type 'System.OutOfMemoryException' was thrown.
+   at System.Collections.Generic.List`1.set_Capacity(Int32 value)
+   at System.Collections.Generic.List`1.EnsureCapacity(Int32 min)
+   at System.Collections.Generic.List`1.Add(T item)
+   at BCInsight.Controllers.ReportController.ReportWeekWiseSale(Nullable`1 siteid) in D:\Aegis Project\BCInsightVendor\BCInsightVendor\BCInsight\Controllers\ReportController.cs:line 709

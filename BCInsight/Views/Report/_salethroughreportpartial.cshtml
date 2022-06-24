@@ -1,0 +1,71 @@
+﻿@model  List<BCInsight.Models.saleThroughrankungViewModel>
+@{
+
+}
+<div class="card">
+    <div class="card-body">
+        @if (Model.Count > 0)
+        {
+            <div align="center" id="msg" style="padding-top:15px;">
+
+                <a href="@Url.Action("DownloadsalethroughReport","Report")">Download <b>Sale Through Ranking Report</b></a>
+            </div>
+            <table id="salethroughrankingtable" class="display compact w-100 table-bordered">
+                <thead>
+                    <tr>
+                        <th>Brand Name</th>
+                        <th>Rank</th>
+                        <th>Category</th>
+                        <th>Division</th>
+                        <th>Sale Qty</th>
+                        <th> Sale Amt</th>
+                        <th>Closing Qty</th>
+                        <th>Closing Amt</th>
+                        <th>sale through</th>
+                        <th>Entire sale through</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.BrandName</td>
+                            <td>@item.Ranking</td>
+                            <td>@item.BrandCategory</td>
+                            <td>@item.Division</td>
+                            <td>@item.SaleQuantity</td>
+                            <td>@item.SaleAmount</td>
+                            <td>@item.StockclosingQuantity</td>
+                            <td>@item.StockclosingAmount</td>
+                            <td>@item.saleThroughReport</td>
+                            <td>@item.EntireBrandsaleThroughReport</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+        else
+        {
+            <div align="center" id="msg" style="padding-top:15px;">
+                <div class="alert alert-success">Sale Through Ranking Report Result Not Found.</div>
+            </div>
+        }
+    </div>
+</div>
+<script src="~/plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="~/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script>
+    $(function () {
+        $("#salethroughrankingtable").DataTable({
+            "responsive": true,
+            "lengthChange": true,
+            "autoWidth": false,
+            "language": {
+                "emptyTable": "Record not found"
+            }
+        });
+    });
+</script>
+

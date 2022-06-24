@@ -1,0 +1,246 @@
+ERROR 5 BCInsight.Controllers.SalesMgmtController - System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at BCInsight.BAL.Services.GenericRepository`2.Save() in D:\Aegis Project\BCInsight\BCInsight\BCInsight.BAL\Services\GenericRepository.cs:line 51
+   at BCInsight.Controllers.SalesMgmtController.ImportExcel() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\SalesMgmtController.cs:line 329
+ERROR 6 BCInsight.Controllers.SalesMgmtController - System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at BCInsight.Controllers.SalesMgmtController.ImportExcel() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\SalesMgmtController.cs:line 212
+ERROR 6 BCInsight.Controllers.SalesMgmtController - System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at BCInsight.Controllers.SalesMgmtController.ImportExcel() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\SalesMgmtController.cs:line 212
+ERROR 6 BCInsight.Controllers.SalesMgmtController - System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at BCInsight.Controllers.SalesMgmtController.ImportExcel() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\SalesMgmtController.cs:line 212
+ERROR 6 BCInsight.Controllers.SalesMgmtController - System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at BCInsight.Controllers.SalesMgmtController.ImportExcel() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\SalesMgmtController.cs:line 212
+ERROR 6 BCInsight.Controllers.SalesMgmtController - System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at BCInsight.Controllers.SalesMgmtController.ImportExcel() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\SalesMgmtController.cs:line 212
+ERROR 6 BCInsight.Controllers.SalesMgmtController - System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at BCInsight.Controllers.SalesMgmtController.ImportExcel() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\SalesMgmtController.cs:line 212
+ERROR 6 BCInsight.Controllers.SalesMgmtController - System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at BCInsight.Controllers.SalesMgmtController.ImportExcel() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\SalesMgmtController.cs:line 212
+ERROR 6 BCInsight.Controllers.SalesMgmtController - System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at BCInsight.Controllers.SalesMgmtController.ImportExcel() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\SalesMgmtController.cs:line 212
+ERROR 6 BCInsight.Controllers.SalesMgmtController - System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at BCInsight.Controllers.SalesMgmtController.ImportExcel() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\SalesMgmtController.cs:line 212
+ERROR 6 BCInsight.Controllers.SalesMgmtController - System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at BCInsight.Controllers.SalesMgmtController.ImportExcel() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\SalesMgmtController.cs:line 212
+ERROR 6 BCInsight.Controllers.SalesMgmtController - System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at BCInsight.Controllers.SalesMgmtController.ImportExcel() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\SalesMgmtController.cs:line 212
+ERROR 6 BCInsight.Controllers.SalesMgmtController - System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at BCInsight.Controllers.SalesMgmtController.ImportExcel() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\SalesMgmtController.cs:line 212
+ERROR 6 BCInsight.Controllers.SalesMgmtController - System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at BCInsight.Controllers.SalesMgmtController.ImportExcel() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\SalesMgmtController.cs:line 212
+ERROR 6 BCInsight.Controllers.SalesMgmtController - System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at BCInsight.Controllers.SalesMgmtController.ImportExcel() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\SalesMgmtController.cs:line 212
+ERROR 6 BCInsight.Controllers.SalesMgmtController - System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at BCInsight.Controllers.SalesMgmtController.ImportExcel() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\SalesMgmtController.cs:line 212
+ERROR 6 BCInsight.Controllers.SalesMgmtController - System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at BCInsight.Controllers.SalesMgmtController.ImportExcel() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\SalesMgmtController.cs:line 212
+ERROR 6 BCInsight.Controllers.SalesMgmtController - System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at BCInsight.Controllers.SalesMgmtController.ImportExcel() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\SalesMgmtController.cs:line 212
+ERROR 6 BCInsight.Controllers.SalesMgmtController - System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at BCInsight.Controllers.SalesMgmtController.ImportExcel() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\SalesMgmtController.cs:line 212
+ERROR 6 BCInsight.Controllers.SalesMgmtController - System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at BCInsight.Controllers.SalesMgmtController.ImportExcel() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\SalesMgmtController.cs:line 212
+ERROR 6 BCInsight.Controllers.SalesMgmtController - System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at BCInsight.Controllers.SalesMgmtController.ImportExcel() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\SalesMgmtController.cs:line 212
+ERROR 6 BCInsight.Controllers.SalesMgmtController - System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at BCInsight.Controllers.SalesMgmtController.ImportExcel() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\SalesMgmtController.cs:line 212
+ERROR 6 BCInsight.Controllers.SalesMgmtController - System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at BCInsight.Controllers.SalesMgmtController.ImportExcel() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\SalesMgmtController.cs:line 212
+ERROR 6 BCInsight.Controllers.SalesMgmtController - System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at BCInsight.Controllers.SalesMgmtController.ImportExcel() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\SalesMgmtController.cs:line 212
+ERROR 6 BCInsight.Controllers.SalesMgmtController - System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at BCInsight.Controllers.SalesMgmtController.ImportExcel() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\SalesMgmtController.cs:line 212
+ERROR 6 BCInsight.Controllers.SalesMgmtController - System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at BCInsight.Controllers.SalesMgmtController.ImportExcel() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\SalesMgmtController.cs:line 212
+ERROR 6 BCInsight.Controllers.SalesMgmtController - System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at BCInsight.Controllers.SalesMgmtController.ImportExcel() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\SalesMgmtController.cs:line 212
+ERROR 6 BCInsight.Controllers.SalesMgmtController - System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at BCInsight.Controllers.SalesMgmtController.ImportExcel() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\SalesMgmtController.cs:line 212
+ERROR 6 BCInsight.Controllers.SalesMgmtController - System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at BCInsight.Controllers.SalesMgmtController.ImportExcel() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\SalesMgmtController.cs:line 212
+ERROR 6 BCInsight.Controllers.SalesMgmtController - System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at BCInsight.Controllers.SalesMgmtController.ImportExcel() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\SalesMgmtController.cs:line 212
+ERROR 6 BCInsight.Controllers.SalesMgmtController - System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at BCInsight.Controllers.SalesMgmtController.ImportExcel() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\SalesMgmtController.cs:line 212
+ERROR 6 BCInsight.Controllers.SalesMgmtController - System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at BCInsight.Controllers.SalesMgmtController.ImportExcel() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\SalesMgmtController.cs:line 212
+ERROR 6 BCInsight.Controllers.SalesMgmtController - System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at BCInsight.Controllers.SalesMgmtController.ImportExcel() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\SalesMgmtController.cs:line 212
+ERROR 6 BCInsight.Controllers.SalesMgmtController - System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at BCInsight.Controllers.SalesMgmtController.ImportExcel() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\SalesMgmtController.cs:line 212
+ERROR 11 BCInsight.Controllers.SalesMgmtController - System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at BCInsight.Controllers.SalesMgmtController.ImportExcel() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\SalesMgmtController.cs:line 213
+ERROR 11 BCInsight.Controllers.SalesMgmtController - System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at BCInsight.Controllers.SalesMgmtController.ImportExcel() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\SalesMgmtController.cs:line 213
+ERROR 11 BCInsight.Controllers.SalesMgmtController - System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at BCInsight.Controllers.SalesMgmtController.ImportExcel() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\SalesMgmtController.cs:line 213
+ERROR 11 BCInsight.Controllers.SalesMgmtController - System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at BCInsight.Controllers.SalesMgmtController.ImportExcel() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\SalesMgmtController.cs:line 213
+ERROR 11 BCInsight.Controllers.SalesMgmtController - System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at BCInsight.Controllers.SalesMgmtController.ImportExcel() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\SalesMgmtController.cs:line 213
+ERROR 11 BCInsight.Controllers.SalesMgmtController - System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at BCInsight.Controllers.SalesMgmtController.ImportExcel() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\SalesMgmtController.cs:line 213
+ERROR 11 BCInsight.Controllers.SalesMgmtController - System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at BCInsight.Controllers.SalesMgmtController.ImportExcel() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\SalesMgmtController.cs:line 213
+ERROR 11 BCInsight.Controllers.SalesMgmtController - System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at BCInsight.Controllers.SalesMgmtController.ImportExcel() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\SalesMgmtController.cs:line 213
+ERROR 11 BCInsight.Controllers.SalesMgmtController - System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at BCInsight.Controllers.SalesMgmtController.ImportExcel() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\SalesMgmtController.cs:line 213
+ERROR 11 BCInsight.Controllers.SalesMgmtController - System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at BCInsight.Controllers.SalesMgmtController.ImportExcel() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\SalesMgmtController.cs:line 213
+ERROR 11 BCInsight.Controllers.SalesMgmtController - System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at BCInsight.Controllers.SalesMgmtController.ImportExcel() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\SalesMgmtController.cs:line 213
+ERROR 11 BCInsight.Controllers.SalesMgmtController - System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at BCInsight.Controllers.SalesMgmtController.ImportExcel() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\SalesMgmtController.cs:line 213
+ERROR 11 BCInsight.Controllers.SalesMgmtController - System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at BCInsight.Controllers.SalesMgmtController.ImportExcel() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\SalesMgmtController.cs:line 213
+ERROR 11 BCInsight.Controllers.SalesMgmtController - System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at BCInsight.Controllers.SalesMgmtController.ImportExcel() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\SalesMgmtController.cs:line 213
+ERROR 11 BCInsight.Controllers.SalesMgmtController - System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at BCInsight.Controllers.SalesMgmtController.ImportExcel() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\SalesMgmtController.cs:line 213
+ERROR 11 BCInsight.Controllers.SalesMgmtController - System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at BCInsight.Controllers.SalesMgmtController.ImportExcel() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\SalesMgmtController.cs:line 213
+ERROR 11 BCInsight.Controllers.SalesMgmtController - System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at BCInsight.Controllers.SalesMgmtController.ImportExcel() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\SalesMgmtController.cs:line 213
+ERROR 11 BCInsight.Controllers.SalesMgmtController - System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at BCInsight.Controllers.SalesMgmtController.ImportExcel() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\SalesMgmtController.cs:line 213
+ERROR 11 BCInsight.Controllers.SalesMgmtController - System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at BCInsight.Controllers.SalesMgmtController.ImportExcel() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\SalesMgmtController.cs:line 213
+ERROR 11 BCInsight.Controllers.SalesMgmtController - System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at BCInsight.Controllers.SalesMgmtController.ImportExcel() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\SalesMgmtController.cs:line 213
+ERROR 11 BCInsight.Controllers.SalesMgmtController - System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at BCInsight.Controllers.SalesMgmtController.ImportExcel() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\SalesMgmtController.cs:line 213
+ERROR 11 BCInsight.Controllers.SalesMgmtController - System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at BCInsight.Controllers.SalesMgmtController.ImportExcel() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\SalesMgmtController.cs:line 213
+ERROR 11 BCInsight.Controllers.SalesMgmtController - System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at BCInsight.Controllers.SalesMgmtController.ImportExcel() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\SalesMgmtController.cs:line 213
+ERROR 11 BCInsight.Controllers.SalesMgmtController - System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at BCInsight.Controllers.SalesMgmtController.ImportExcel() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\SalesMgmtController.cs:line 213
+ERROR 11 BCInsight.Controllers.SalesMgmtController - System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at BCInsight.Controllers.SalesMgmtController.ImportExcel() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\SalesMgmtController.cs:line 213
+ERROR 11 BCInsight.Controllers.SalesMgmtController - System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at BCInsight.Controllers.SalesMgmtController.ImportExcel() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\SalesMgmtController.cs:line 213
+ERROR 11 BCInsight.Controllers.SalesMgmtController - System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at BCInsight.Controllers.SalesMgmtController.ImportExcel() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\SalesMgmtController.cs:line 213

@@ -1,0 +1,32 @@
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\HelperClass\Utility.cs:line 19
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : Object reference not set to an instance of an object.
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\HelperClass\Utility.cs:line 19
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : Object reference not set to an instance of an object.
+ERROR 49 BCInsight.Controllers.PrivateLabelMgmtController - System.ArgumentException: Column 'GroupName' does not belong to table .
+   at System.Data.DataRow.GetDataColumn(String columnName)
+   at System.Data.DataRow.get_Item(String columnName)
+   at BCInsight.Controllers.PrivateLabelMgmtController.ImportExcel() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\PrivateLabelMgmtController.cs:line 1270
+ERROR 49 BCInsight.Controllers.PrivateLabelMgmtController - System.ArgumentException: Column 'GroupName' does not belong to table .
+   at System.Data.DataRow.GetDataColumn(String columnName)
+   at System.Data.DataRow.get_Item(String columnName)
+   at BCInsight.Controllers.PrivateLabelMgmtController.ImportExcel() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\PrivateLabelMgmtController.cs:line 1270
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\HelperClass\Utility.cs:line 19
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : Object reference not set to an instance of an object.
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\HelperClass\Utility.cs:line 19
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : Object reference not set to an instance of an object.
+ERROR 6 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\HelperClass\Utility.cs:line 19
+ERROR 6 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : Object reference not set to an instance of an object.
+ERROR 6 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\HelperClass\Utility.cs:line 19
+ERROR 6 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : Object reference not set to an instance of an object.
+ERROR 6 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\HelperClass\Utility.cs:line 19
+ERROR 6 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : Object reference not set to an instance of an object.
+ERROR 6 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\HelperClass\Utility.cs:line 19
+ERROR 6 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : Object reference not set to an instance of an object.

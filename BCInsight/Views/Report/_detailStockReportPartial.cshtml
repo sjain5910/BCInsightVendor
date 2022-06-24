@@ -1,0 +1,67 @@
+﻿@model BCInsight.Models.detailsStockReportvendorViewModel
+@{
+    ViewBag.Title = "Index";
+}
+<div class="card card-info">
+    @foreach (var item in Model.Sitelist)
+    {
+        <div class="card-header">
+            <h3 class="card-title">@item.SiteName</h3>
+        </div>
+        <div class="card-body">
+            <div class="form-group">
+                @if (item.brandslist.Count > 0)
+                {
+                    <table id="MonthSummary" class="display compact w-100 table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Section</th>
+                                <th>Category2</th>
+                                <th>Brand</th>
+                                <th>Department</th>
+                                <th>Division</th>
+                                <th>Color</th>
+                                <th>Stylecode</th>
+                                <th>Desc6</th>
+                                <th>Size</th>
+                                <th>Fit</th>
+                                <th>Quantity</th>
+                                <th>MRP</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var Stock in item.brandslist)
+                            {
+                                <tr>
+                                    <td>@Stock.Section</td>
+                                    <td>@Stock.Category</td>
+                                    <td>@Stock.Brand</td>
+                                    <td>@Stock.Department</td>
+                                    <td>@Stock.Division</td>
+                                    <td>@Stock.Color</td>
+                                    <td>@Stock.Stylecode</td>
+                                    <td>@Stock.Desc6</td>
+                                    <td>@Stock.size</td>
+                                    <td>@Stock.Fit</td>
+                                    <td>@Stock.Quantity</td>
+                                    <td>@Stock.MRP</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                }
+                else
+                {
+                    <div align="center" id="msg" style="padding-top:15px;">
+                        <div class="alert alert-success">No Result found.</div>
+                    </div>
+                }
+
+
+            </div>
+
+        </div>
+    }
+
+
+</div>

@@ -1,0 +1,220 @@
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.InvalidOperationException: No connection string named 'Vendor_bcInsightdevEntities' could be found in the application config file.
+   at System.Data.Entity.Internal.LazyInternalConnection.get_ConnectionHasModel()
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsightVendor\BCInsightVendor\BCInsight\HelperClass\Utility.cs:line 40
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : No connection string named 'Vendor_bcInsightdevEntities' could be found in the application config file.
+ERROR 10 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.InvalidOperationException: No connection string named 'Vendor_bcInsightdevEntities' could be found in the application config file.
+   at System.Data.Entity.Internal.LazyInternalConnection.get_ConnectionHasModel()
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsightVendor\BCInsightVendor\BCInsight\HelperClass\Utility.cs:line 40
+ERROR 10 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : No connection string named 'Vendor_bcInsightdevEntities' could be found in the application config file.
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.InvalidOperationException: No connection string named 'Vendor_bcInsightdevEntities' could be found in the application config file.
+   at System.Data.Entity.Internal.LazyInternalConnection.get_ConnectionHasModel()
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsightVendor\BCInsightVendor\BCInsight\HelperClass\Utility.cs:line 40
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : No connection string named 'Vendor_bcInsightdevEntities' could be found in the application config file.
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.InvalidOperationException: No connection string named 'Vendor_bcInsightdevEntities' could be found in the application config file.
+   at System.Data.Entity.Internal.LazyInternalConnection.get_ConnectionHasModel()
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsightVendor\BCInsightVendor\BCInsight\HelperClass\Utility.cs:line 40
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : No connection string named 'Vendor_bcInsightdevEntities' could be found in the application config file.
+ERROR 5 BCInsight.Controllers.LoginController - System.InvalidOperationException: No connection string named 'Vendor_bcInsightdevEntities' could be found in the application config file.
+   at System.Data.Entity.Internal.LazyInternalConnection.get_ConnectionHasModel()
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.Where[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BCInsight.BAL.Services.GenericRepository`2.FindBy(Expression`1 predicate) in D:\Aegis Project\BCInsightVendor\BCInsightVendor\BCInsight.BAL\Services\GenericRepository.cs:line 39
+   at BCInsight.Controllers.LoginController.Login(VendorportalloginViewModel model) in D:\Aegis Project\BCInsightVendor\BCInsightVendor\BCInsight\Controllers\LoginController.cs:line 50
+ERROR 9 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.InvalidOperationException: No connection string named 'Vendor_bcInsightdevEntities' could be found in the application config file.
+   at System.Data.Entity.Internal.LazyInternalConnection.get_ConnectionHasModel()
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsightVendor\BCInsightVendor\BCInsight\HelperClass\Utility.cs:line 40
+ERROR 9 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : No connection string named 'Vendor_bcInsightdevEntities' could be found in the application config file.
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.InvalidOperationException: No connection string named 'Vendor_bcInsightdevEntities' could be found in the application config file.
+   at System.Data.Entity.Internal.LazyInternalConnection.get_ConnectionHasModel()
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsightVendor\BCInsightVendor\BCInsight\HelperClass\Utility.cs:line 40
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : No connection string named 'Vendor_bcInsightdevEntities' could be found in the application config file.
+ERROR 5 BCInsight.Controllers.LoginController - System.InvalidOperationException: No connection string named 'Vendor_bcInsightdevEntities' could be found in the application config file.
+   at System.Data.Entity.Internal.LazyInternalConnection.get_ConnectionHasModel()
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.Where[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BCInsight.BAL.Services.GenericRepository`2.FindBy(Expression`1 predicate) in D:\Aegis Project\BCInsightVendor\BCInsightVendor\BCInsight.BAL\Services\GenericRepository.cs:line 39
+   at BCInsight.Controllers.LoginController.Login(VendorportalloginViewModel model) in D:\Aegis Project\BCInsightVendor\BCInsightVendor\BCInsight\Controllers\LoginController.cs:line 50
+ERROR 10 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.InvalidOperationException: No connection string named 'Vendor_bcInsightdevEntities' could be found in the application config file.
+   at System.Data.Entity.Internal.LazyInternalConnection.get_ConnectionHasModel()
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsightVendor\BCInsightVendor\BCInsight\HelperClass\Utility.cs:line 40
+ERROR 10 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : No connection string named 'Vendor_bcInsightdevEntities' could be found in the application config file.
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.InvalidOperationException: No connection string named 'Vendor_bcInsightdevEntities' could be found in the application config file.
+   at System.Data.Entity.Internal.LazyInternalConnection.get_ConnectionHasModel()
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsightVendor\BCInsightVendor\BCInsight\HelperClass\Utility.cs:line 40
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : No connection string named 'Vendor_bcInsightdevEntities' could be found in the application config file.
+ERROR 5 BCInsight.Controllers.LoginController - System.InvalidOperationException: No connection string named 'Vendor_bcInsightdevEntities' could be found in the application config file.
+   at System.Data.Entity.Internal.LazyInternalConnection.get_ConnectionHasModel()
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.Where[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BCInsight.BAL.Services.GenericRepository`2.FindBy(Expression`1 predicate) in D:\Aegis Project\BCInsightVendor\BCInsightVendor\BCInsight.BAL\Services\GenericRepository.cs:line 39
+   at BCInsight.Controllers.LoginController.Login(VendorportalloginViewModel model) in D:\Aegis Project\BCInsightVendor\BCInsightVendor\BCInsight\Controllers\LoginController.cs:line 50
+ERROR 6 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.InvalidOperationException: No connection string named 'Vendor_bcInsightdevEntities' could be found in the application config file.
+   at System.Data.Entity.Internal.LazyInternalConnection.get_ConnectionHasModel()
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsightVendor\BCInsightVendor\BCInsight\HelperClass\Utility.cs:line 40
+ERROR 6 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : No connection string named 'Vendor_bcInsightdevEntities' could be found in the application config file.
+ERROR 6 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.InvalidOperationException: No connection string named 'Vendor_bcInsightdevEntities' could be found in the application config file.
+   at System.Data.Entity.Internal.LazyInternalConnection.get_ConnectionHasModel()
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsightVendor\BCInsightVendor\BCInsight\HelperClass\Utility.cs:line 40
+ERROR 6 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : No connection string named 'Vendor_bcInsightdevEntities' could be found in the application config file.
+ERROR 6 BCInsight.Controllers.LoginController - System.InvalidOperationException: No connection string named 'Vendor_bcInsightdevEntities' could be found in the application config file.
+   at System.Data.Entity.Internal.LazyInternalConnection.get_ConnectionHasModel()
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.Where[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BCInsight.BAL.Services.GenericRepository`2.FindBy(Expression`1 predicate) in D:\Aegis Project\BCInsightVendor\BCInsightVendor\BCInsight.BAL\Services\GenericRepository.cs:line 39
+   at BCInsight.Controllers.LoginController.Login(VendorportalloginViewModel model) in D:\Aegis Project\BCInsightVendor\BCInsightVendor\BCInsight\Controllers\LoginController.cs:line 50
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.InvalidOperationException: No connection string named 'Vendor_bcInsightdevEntities' could be found in the application config file.
+   at System.Data.Entity.Internal.LazyInternalConnection.get_ConnectionHasModel()
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsightVendor\BCInsightVendor\BCInsight\HelperClass\Utility.cs:line 40
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : No connection string named 'Vendor_bcInsightdevEntities' could be found in the application config file.
+ERROR 7 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.InvalidOperationException: No connection string named 'Vendor_bcInsightdevEntities' could be found in the application config file.
+   at System.Data.Entity.Internal.LazyInternalConnection.get_ConnectionHasModel()
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsightVendor\BCInsightVendor\BCInsight\HelperClass\Utility.cs:line 40
+ERROR 7 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : No connection string named 'Vendor_bcInsightdevEntities' could be found in the application config file.
+ERROR 6 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.InvalidOperationException: No connection string named 'Vendor_bcInsightdevEntities' could be found in the application config file.
+   at System.Data.Entity.Internal.LazyInternalConnection.get_ConnectionHasModel()
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsightVendor\BCInsightVendor\BCInsight\HelperClass\Utility.cs:line 40
+ERROR 6 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : No connection string named 'Vendor_bcInsightdevEntities' could be found in the application config file.
+ERROR 6 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.InvalidOperationException: No connection string named 'Vendor_bcInsightdevEntities' could be found in the application config file.
+   at System.Data.Entity.Internal.LazyInternalConnection.get_ConnectionHasModel()
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsightVendor\BCInsightVendor\BCInsight\HelperClass\Utility.cs:line 40
+ERROR 6 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : No connection string named 'Vendor_bcInsightdevEntities' could be found in the application config file.
+ERROR 6 BCInsight.Controllers.LoginController - System.InvalidOperationException: No connection string named 'Vendor_bcInsightdevEntities' could be found in the application config file.
+   at System.Data.Entity.Internal.LazyInternalConnection.get_ConnectionHasModel()
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.Where[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BCInsight.BAL.Services.GenericRepository`2.FindBy(Expression`1 predicate) in D:\Aegis Project\BCInsightVendor\BCInsightVendor\BCInsight.BAL\Services\GenericRepository.cs:line 39
+   at BCInsight.Controllers.LoginController.Login(VendorportalloginViewModel model) in D:\Aegis Project\BCInsightVendor\BCInsightVendor\BCInsight\Controllers\LoginController.cs:line 50
+ERROR 7 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.InvalidOperationException: No connection string named 'Vendor_bcInsightdevEntities' could be found in the application config file.
+   at System.Data.Entity.Internal.LazyInternalConnection.get_ConnectionHasModel()
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsightVendor\BCInsightVendor\BCInsight\HelperClass\Utility.cs:line 40
+ERROR 7 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : No connection string named 'Vendor_bcInsightdevEntities' could be found in the application config file.
+ERROR 6 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.InvalidOperationException: No connection string named 'Vendor_bcInsightdevEntities' could be found in the application config file.
+   at System.Data.Entity.Internal.LazyInternalConnection.get_ConnectionHasModel()
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsightVendor\BCInsightVendor\BCInsight\HelperClass\Utility.cs:line 40
+ERROR 6 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : No connection string named 'Vendor_bcInsightdevEntities' could be found in the application config file.
+ERROR 6 BCInsight.Controllers.LoginController - System.InvalidOperationException: No connection string named 'Vendor_bcInsightdevEntities' could be found in the application config file.
+   at System.Data.Entity.Internal.LazyInternalConnection.get_ConnectionHasModel()
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.Where[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BCInsight.BAL.Services.GenericRepository`2.FindBy(Expression`1 predicate) in D:\Aegis Project\BCInsightVendor\BCInsightVendor\BCInsight.BAL\Services\GenericRepository.cs:line 39
+   at BCInsight.Controllers.LoginController.Login(VendorportalloginViewModel model) in D:\Aegis Project\BCInsightVendor\BCInsightVendor\BCInsight\Controllers\LoginController.cs:line 50

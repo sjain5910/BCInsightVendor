@@ -1,0 +1,8 @@
+ERROR 7 BCInsight.Controllers.HomeController - System.DivideByZeroException: Attempted to divide by zero.
+   at System.Decimal.FCallDivide(Decimal& d1, Decimal& d2)
+   at System.Decimal.op_Division(Decimal d1, Decimal d2)
+   at BCInsight.Controllers.HomeController.DailyProductPerformance() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 656
+ERROR 10 BCInsight.Controllers.HomeController - System.DivideByZeroException: Attempted to divide by zero.
+   at System.Decimal.FCallDivide(Decimal& d1, Decimal& d2)
+   at System.Decimal.op_Division(Decimal d1, Decimal d2)
+   at BCInsight.Controllers.HomeController.DailyProductPerformance()

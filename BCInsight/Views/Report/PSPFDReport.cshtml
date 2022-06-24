@@ -1,0 +1,138 @@
+﻿@model BCInsight.Models.PSPFDreportViewModel
+@{
+    ViewBag.Title = "PSPFD Report";
+}
+<div class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+
+            </div><!-- /.col -->
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item">Report</li>
+                    <li class="breadcrumb-item active">PSPFD Report</li>
+                </ol>
+            </div><!-- /.col -->
+        </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+</div>
+<div class="card-header text-center">
+    <h3>PSPFD Ranking Report</h3><br />
+    <div class="form-group row">
+        <label for="inputEmail3" class="col-sm-2 col-form-label">City</label>
+        <div class="col-sm-4">
+            @Html.DropDownListFor(model => model.Sites, new SelectList(ViewBag.Sites, "Value", "Text"), "All", new { @class = "form-control" })
+        </div>
+        <label for="inputEmail3" class="col-sm-2 col-form-label">Report Based On</label>
+        <div class="col-sm-4">
+            @Html.DropDownListFor(model => model.category, new List<SelectListItem>
+                  {
+                      new SelectListItem{ Text="Zone Level", Value = "Zone Level" },
+                      new SelectListItem{ Text="Category Level", Value = "Category Level" },
+
+                   }, new { @class = "form-control" })
+        </div>        
+    </div>
+    <div class="form-group row">
+        <label for="inputEmail3" class="col-sm-2 col-form-label">Report Type</label>
+        <div class="col-sm-4">
+            @Html.DropDownListFor(model => model.ReportType, new List<SelectListItem>
+                    {
+                        new SelectListItem{ Text="Detail Type Report", Value = "Detail Type Report" },
+                        new SelectListItem{ Text="Summary Type Report", Value = "Summary Type Report" },
+                     }, new { @class = "form-control" })
+        </div>
+        <label for="inputEmail3" class="col-sm-2 col-form-label monthlist">Month</label>
+        <div class="col-sm-4 monthlist">
+            @Html.DropDownListFor(model => model.reportmonth, new List<SelectListItem>
+                 {
+                     new SelectListItem{ Text="April", Value = "04" },
+                     new SelectListItem{ Text="May", Value = "05" },
+                     new SelectListItem{ Text="June", Value = "06" },
+                     new SelectListItem{ Text="July", Value = "07" },
+                     new SelectListItem{ Text="August", Value = "08" },
+                     new SelectListItem{ Text="September", Value = "09" },
+                     new SelectListItem{ Text="October", Value = "10" },
+                     new SelectListItem{ Text="November", Value = "11" },
+                     new SelectListItem{ Text="December", Value = "12" },
+                     new SelectListItem{ Text="January", Value = "01" },
+                     new SelectListItem{ Text="February", Value = "02" },
+                     new SelectListItem{ Text="March", Value = "03" },
+                  }, new { @class = "form-control" })
+        </div>
+    </div>
+    <button type="button" id="Generatepspfdreport" class="btn btn-primary btn-sm mr-1" data-loading-text="Loading..." title="Search"> Generate</button>
+</div>
+
+<div class="card-body">
+
+</div>
+<script type="text/javascript">
+    $(function () {
+        //Date range picker
+
+        $('#reportmonth').datetimepicker({
+            format: 'MM-YYYY'
+        });
+        $('#reservation').daterangepicker()
+        //Date range picker with time picker
+        $("#ReportType").change(function () {
+            debugger;
+            var ReportType = $("#ReportType").val();
+            if (ReportType == "Detail Type Report") {
+                $("#monthlist").show();
+            }
+            else if (ReportType == "Summary Type Report") {
+                $("#monthlist").hide();
+            }
+        });
+    })
+
+    $("#Generatepspfdreport").click(function () {
+        debugger
+        var Sites = $("#Sites").val();
+    var Category = $("#category").val();
+    var Reporttype = $("#ReportType").val();
+    var selectedmonth = $("#reportmonth").val();
+        $("#ajax-loader").show()
+        if (Reporttype == "Detail Type Report") {
+            $.ajax({
+                type: "GET",
+                data: { Category, Reporttype, selectedmonth,Sites },
+                url: '@Url.Action("PsfpddetailReport", "Report")',
+                success: function (response) {
+                    debugger
+                    $(".card-body").html(response);
+                    $("#ajax-loader").hide();
+                },
+                failure: function (response) {
+                    $("#ajax-loader").hide();
+                    alert(response.d);
+                },
+                complete: function () {
+                }
+            });
+        }
+        else {
+             $.ajax({
+            type: "GET",
+            data: {Category,Reporttype,Sites},
+            url: '@Url.Action("PsfpdsummaryReport", "Report")',
+            success: function (response) {
+            debugger
+                $(".card-body").html(response);
+                $("#ajax-loader").hide();
+            },
+            failure: function (response) {
+                $("#ajax-loader").hide();
+            alert(response.d);
+            },
+            complete: function () {
+            }
+            });
+        }
+
+});
+
+</script>

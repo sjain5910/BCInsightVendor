@@ -1,0 +1,66 @@
+﻿@model List<BCInsight.DAL.TblApiLog>
+@{
+    ViewBag.Title = "Api Log";
+}
+
+
+<!-- Content Header (Page header) -->
+<div class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1 class="m-0">API Log</h1>
+            </div><!-- /.col -->
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="@Url.Action("")">Home</a></li>
+                    @*<li class="breadcrumb-item active">Dashboard v2</li>*@
+                </ol>
+            </div><!-- /.col -->
+        </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+</div>
+<!-- /.content-header -->
+<table id="tblapiLog" class="table table-bordered table-striped display compact">
+    <thead>
+        <tr>
+            
+            <th>Action</th>
+            <th>Input Data</th>
+            <th>Ip Address</th>
+            <th>Log Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.queryString</td>
+                <td>@item.inputData</td>
+                <td>@item.ip</td>
+                <td>@item.logDate</td>
+            </tr>
+
+        }
+    </tbody>
+</table>
+
+
+
+<!-- jQuery -->
+<script src="~/plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="~/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script>
+    $(function () {
+        $("#tblapiLog").DataTable({
+            "responsive": true,
+            "lengthChange": true,
+            "autoWidth": false,
+            "ordering": false,
+            "language": {
+                "emptyTable": "API log not found"
+            },
+        });
+    });
+</script>

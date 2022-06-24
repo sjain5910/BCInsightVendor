@@ -1,0 +1,104 @@
+﻿@model BCInsight.Models.WeeklysalescompareViewModel
+@{
+    ViewBag.Title = "Index";
+}
+<div class="card card-info">
+    @foreach (var item in Model.sites)
+    {
+        <div class="card-header">
+            <h3 class="card-title">@item.siteName</h3>
+        </div>
+        <div class="card-body">
+            <div class="form-group">
+                @if (item.sitewisesale.Count > 0)
+                {
+                    <table id="vendorperson" class="display compact w-100 table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Brand</th>
+                                @foreach (var itemdate in Model.labels)
+                                {
+                                    <th colspan="3">@itemdate.datelist</th>
+                                }
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <th>@Model.curryear</th>
+                                <th>@Model.preyear</th>
+                                <th>Diff</th>
+                                <th>@Model.curryear</th>
+                                <th>@Model.preyear</th>
+                                <th>Diff</th>
+                                <th>@Model.curryear</th>
+                                <th>@Model.preyear</th>
+                                <th>Diff</th>
+                                <th>@Model.curryear</th>
+                                <th>@Model.preyear</th>
+                                <th>Diff</th>
+                                <th>@Model.curryear</th>
+                                <th>@Model.preyear</th>
+                                <th>Diff</th>
+                                <th>@Model.curryear</th>
+                                <th>@Model.preyear</th>
+                                <th>Diff</th>
+                                <th>@Model.curryear</th>
+                                <th>@Model.preyear</th>
+                                <th>Diff</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var brands in item.sitewisesale)
+                            {
+                                <tr>
+                                    <td>@brands.BrandName</td>
+                                    @foreach (var daywisesale in brands.DaywiseSale)
+                                    {
+                                        if (daywisesale.curryearsale > 0 || daywisesale.curryearsale < 0)
+                                        {
+                                            <td>@daywisesale.curryearsale</td>
+                                        }
+                                        else
+                                        {
+                                            <td>NA</td>
+                                        }
+                                        if (daywisesale.preyearsale > 0 ||daywisesale.preyearsale < 0)
+                                        {
+                                            <td>@daywisesale.preyearsale</td>
+                                        }
+                                        else
+                                        {
+                                            <td>NA</td>
+                                        }
+                                        if (daywisesale.Diff > 0)
+                                        {
+                                            <td style="color:green">@daywisesale.Diff</td>
+                                        }
+                                        else if (daywisesale.Diff < 0)
+                                        {
+                                            <td style="color:red">@daywisesale.Diff</td>
+                                        }
+                                        else
+                                        {
+                                            <td>NA</td>
+                                        }
+
+
+                                    }
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                }
+                else
+                {
+                    <div align="center" id="msg" style="padding-top:15px;">
+                        <div class="alert alert-success">No Result found.</div>
+                    </div>
+                }
+
+
+            </div>
+
+        </div>
+    }
+</div>

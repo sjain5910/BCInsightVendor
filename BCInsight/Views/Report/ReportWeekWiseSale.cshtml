@@ -1,0 +1,130 @@
+﻿@model BCInsight.Models.WeeklysalesVendorPortalViewModel
+@{
+    ViewBag.Title = "Index";
+}
+
+<!-- Content Header (Page header) -->
+<div class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1 class="m-0">Weekly Sales</h1>
+            </div><!-- /.col -->
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="@Url.Action("Index","Home")">Home</a></li>
+                    <li class="breadcrumb-item active">Weekly Sales</li>
+                </ol>
+            </div><!-- /.col -->
+
+
+        </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+</div>
+<!-- /.content-header -->
+<div class="card card-info">
+    <div class="card-header">
+        <h3 class="card-title">Weekly Sales</h3>
+    </div>
+    <div class="card-body">
+        @using (Html.BeginForm("ReportWeekWiseSale", "Report", FormMethod.Get, new { enctype = "multipart/form-data" }))
+        {
+            <div class="card-body">
+                <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Site Name <span class="requiredSign">*</span></label>
+                    <div class="col-sm-10">
+                        @Html.DropDownListFor(model => model.siteid, new SelectList(ViewBag.SiteNames, "Value", "Text"), "All", new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.siteid, "", new { @class = "error" })
+                    </div>
+                </div>
+            </div>
+            <!-- /.card-body -->
+            <div class="card-footer">
+
+                <button type="submit" class="btn btn-primary">Generate</button>
+
+                <button type="button" id="btnExport" class="btn btn-primary">Export</button>
+
+            </div>
+        }
+    </div>
+</div>
+
+<div class="card card-info">
+    @foreach (var item in Model.siteNames)
+    {
+        <div class="card-header">
+            <h3 class="card-title">@item.siteName</h3>
+        </div>
+        <div class="card-body">
+            <div class="form-group">
+                @if (item.BrandSale.Count > 0)
+                {
+                    <table id="MonthSummary" class="display compact w-100 table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Brand</th>
+                                @foreach (var labels in Model.label)
+                                {
+                                    <th>@labels</th>
+                                }
+                                <th>Difference</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var brands in item.BrandSale)
+                            {
+                            <tr>
+                                <td>@brands.Brand</td>
+                                @foreach (var sale in brands.daywisesale)
+                                {
+                                    if (sale > 0)
+                                    {
+                                        <td>@sale</td>
+                                    }
+                                    else
+                                    {
+                                        <td>NA</td>
+                                    }
+                                }
+                                @if (brands.Total > 0)
+                                {
+                                    <td>@brands.Total</td>
+                                }
+                                else
+                                {
+                                    <td>-</td>
+                                }
+                            </tr>
+                            }
+                        </tbody>
+                    </table>
+                }
+                else
+                {
+                    <div align="center" id="msg" style="padding-top:15px;">
+                        <div class="alert alert-success">No Result found.</div>
+                    </div>
+                }
+
+
+            </div>
+
+        </div>
+    }
+
+
+</div>
+<!-- jQuery -->
+<script src="~/plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="~/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="https://rawgit.com/unconditional/jquery-table2excel/master/src/jquery.table2excel.js"></script>
+<script type="text/javascript">
+    $("#btnExport").click(function () {
+        debugger
+        var siteid = $("#siteid").val();
+        var url = "/Report/ExportWeekWiseSale?siteid=" + siteid;
+        window.location.href = url;
+    });
+</script>

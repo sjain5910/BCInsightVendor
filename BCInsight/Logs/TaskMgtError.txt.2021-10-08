@@ -1,0 +1,14 @@
+INFO 6 BCInsight.Controllers.HomeController - User: DESKTOP-LPOUG0E & IP: ::1
+INFO 6 BCInsight.Controllers.HomeController - User: DESKTOP-LPOUG0E & IP: ::1
+INFO 6 BCInsight.Controllers.HomeController - User: DESKTOP-LPOUG0E & IP: ::1
+INFO 6 BCInsight.Controllers.HomeController - User: DESKTOP-LPOUG0E & IP: ::1
+INFO 6 BCInsight.Controllers.HomeController - User: DESKTOP-LPOUG0E & IP: ::1
+ERROR 6 BCInsight.Controllers.UserMgmtController - System.OverflowException: Value was either too large or too small for an unsigned byte.
+   at System.Byte.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToByte(String value)
+   at BCInsight.Controllers.UserMgmtController.GetusermanagementFromExcelRow(DataRow row) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\UserMgmtController.cs:line 311
+   at BCInsight.Controllers.UserMgmtController.UploadExcel(HttpPostedFileBase upload_file) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\UserMgmtController.cs:line 272
+INFO 6 BCInsight.Controllers.HomeController - User: DESKTOP-LPOUG0E & IP: ::1
+INFO 6 BCInsight.Controllers.HomeController - User: DESKTOP-LPOUG0E & IP: ::1
+INFO 5 BCInsight.Controllers.HomeController - User: DESKTOP-LPOUG0E & IP: ::1
+INFO 6 BCInsight.Controllers.HomeController - User: DESKTOP-LPOUG0E & IP: ::1

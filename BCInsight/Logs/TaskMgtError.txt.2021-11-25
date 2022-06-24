@@ -1,0 +1,256 @@
+ERROR 6 BCInsight.Controllers.MultibrandIncentiveRuleController - System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Models.MultibrandIncentiveViewModel..ctor(tblMultiBrandIncentiveRule multirand) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Models\MultibrandIncentiveViewModel.cs:line 18
+   at BCInsight.Controllers.MultibrandIncentiveRuleController.Update(Nullable`1 ruleid) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\MultibrandIncentiveRuleController.cs:line 90
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\HelperClass\Utility.cs:line 19
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : Object reference not set to an instance of an object.
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\HelperClass\Utility.cs:line 19
+ERROR 6 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\HelperClass\Utility.cs:line 19
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : Object reference not set to an instance of an object.
+ERROR 6 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : Object reference not set to an instance of an object.
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\HelperClass\Utility.cs:line 19
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : Object reference not set to an instance of an object.
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\HelperClass\Utility.cs:line 19
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : Object reference not set to an instance of an object.
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\HelperClass\Utility.cs:line 19
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : Object reference not set to an instance of an object.
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\HelperClass\Utility.cs:line 19
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : Object reference not set to an instance of an object.
+ERROR 6 BCInsight.Controllers.MultibrandIncentiveRuleController - System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Models.MultibrandIncentiveViewModel..ctor(tblMultiBrandIncentiveRule multirand) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Models\MultibrandIncentiveViewModel.cs:line 18
+   at BCInsight.Controllers.MultibrandIncentiveRuleController.Update(Nullable`1 ruleid) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\MultibrandIncentiveRuleController.cs:line 90
+ERROR 6 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\HelperClass\Utility.cs:line 19
+ERROR 6 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : Object reference not set to an instance of an object.
+ERROR 6 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\HelperClass\Utility.cs:line 19
+ERROR 6 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : Object reference not set to an instance of an object.
+ERROR 6 BCInsight.Controllers.MultibrandIncentiveRuleController - System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Models.MultibrandIncentiveViewModel..ctor(tblMultiBrandIncentiveRule multirand) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Models\MultibrandIncentiveViewModel.cs:line 18
+   at BCInsight.Controllers.MultibrandIncentiveRuleController.Update(Nullable`1 ruleid) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\MultibrandIncentiveRuleController.cs:line 90
+ERROR 6 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\HelperClass\Utility.cs:line 19
+ERROR 6 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : Object reference not set to an instance of an object.
+ERROR 6 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\HelperClass\Utility.cs:line 19
+ERROR 6 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : Object reference not set to an instance of an object.
+ERROR 6 BCInsight.Controllers.MultibrandIncentiveRuleController - System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Models.MultibrandIncentiveViewModel..ctor(tblMultiBrandIncentiveRule multirand) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Models\MultibrandIncentiveViewModel.cs:line 18
+   at BCInsight.Controllers.MultibrandIncentiveRuleController.Update(Nullable`1 ruleid) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\MultibrandIncentiveRuleController.cs:line 90
+ERROR 9 BCInsight.Controllers.MultibrandIncentiveRuleController - System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Models.MultibrandIncentiveViewModel..ctor(tblMultiBrandIncentiveRule multirand) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Models\MultibrandIncentiveViewModel.cs:line 18
+   at BCInsight.Controllers.MultibrandIncentiveRuleController.Update(Nullable`1 ruleid) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\MultibrandIncentiveRuleController.cs:line 90
+ERROR 28 BCInsight.Controllers.MultibrandIncentiveRuleController - System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Models.MultibrandIncentiveViewModel..ctor(tblMultiBrandIncentiveRule multirand) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Models\MultibrandIncentiveViewModel.cs:line 18
+   at BCInsight.Controllers.MultibrandIncentiveRuleController.Update(Nullable`1 ruleid) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\MultibrandIncentiveRuleController.cs:line 90
+ERROR 39 BCInsight.Controllers.MultibrandIncentiveRuleController - System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Models.MultibrandIncentiveViewModel..ctor(tblMultiBrandIncentiveRule multirand) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Models\MultibrandIncentiveViewModel.cs:line 18
+   at BCInsight.Controllers.MultibrandIncentiveRuleController.Update(Nullable`1 ruleid) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\MultibrandIncentiveRuleController.cs:line 90
+ERROR 39 BCInsight.Controllers.MultibrandIncentiveRuleController - System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Models.MultibrandIncentiveViewModel..ctor(tblMultiBrandIncentiveRule multirand) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Models\MultibrandIncentiveViewModel.cs:line 18
+   at BCInsight.Controllers.MultibrandIncentiveRuleController.Update(Nullable`1 ruleid) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\MultibrandIncentiveRuleController.cs:line 90
+ERROR 45 BCInsight.Controllers.MultibrandIncentiveRuleController - System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Models.MultibrandIncentiveViewModel..ctor(tblMultiBrandIncentiveRule multirand) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Models\MultibrandIncentiveViewModel.cs:line 18
+   at BCInsight.Controllers.MultibrandIncentiveRuleController.Update(Nullable`1 ruleid) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\MultibrandIncentiveRuleController.cs:line 90
+ERROR 55 BCInsight.Controllers.MultibrandIncentiveRuleController - System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Models.MultibrandIncentiveViewModel..ctor(tblMultiBrandIncentiveRule multirand) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Models\MultibrandIncentiveViewModel.cs:line 18
+   at BCInsight.Controllers.MultibrandIncentiveRuleController.Update(Nullable`1 ruleid) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\MultibrandIncentiveRuleController.cs:line 90
+ERROR 6 BCInsight.Controllers.MultibrandIncentiveRuleController - System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Models.MultibrandIncentiveViewModel..ctor(tblMultiBrandIncentiveRule multirand) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Models\MultibrandIncentiveViewModel.cs:line 18
+   at BCInsight.Controllers.MultibrandIncentiveRuleController.Update(Nullable`1 ruleid) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\MultibrandIncentiveRuleController.cs:line 90
+ERROR 6 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\HelperClass\Utility.cs:line 19
+ERROR 6 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : Object reference not set to an instance of an object.
+ERROR 6 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\HelperClass\Utility.cs:line 19
+ERROR 6 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : Object reference not set to an instance of an object.
+ERROR 6 BCInsight.Controllers.MultibrandIncentiveRuleController - System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Models.MultibrandIncentiveViewModel..ctor(tblMultiBrandIncentiveRule multirand) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Models\MultibrandIncentiveViewModel.cs:line 18
+   at BCInsight.Controllers.MultibrandIncentiveRuleController.Update(Nullable`1 ruleid) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\MultibrandIncentiveRuleController.cs:line 90
+ERROR 27 BCInsight.Controllers.MultibrandIncentiveRuleController - System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Models.MultibrandIncentiveViewModel..ctor(tblMultiBrandIncentiveRule multirand) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Models\MultibrandIncentiveViewModel.cs:line 18
+   at BCInsight.Controllers.MultibrandIncentiveRuleController.Update(Nullable`1 ruleid) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\MultibrandIncentiveRuleController.cs:line 90
+ERROR 6 BCInsight.Controllers.MultibrandIncentiveRuleController - System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Models.MultibrandIncentiveViewModel..ctor(tblMultiBrandIncentiveRule multirand) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Models\MultibrandIncentiveViewModel.cs:line 18
+   at BCInsight.Controllers.MultibrandIncentiveRuleController.Update(Nullable`1 ruleid) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\MultibrandIncentiveRuleController.cs:line 90
+ERROR 32 BCInsight.Controllers.MultibrandIncentiveRuleController - System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Models.MultibrandIncentiveViewModel..ctor(tblMultiBrandIncentiveRule multirand) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Models\MultibrandIncentiveViewModel.cs:line 18
+   at BCInsight.Controllers.MultibrandIncentiveRuleController.Update(Nullable`1 ruleid) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\MultibrandIncentiveRuleController.cs:line 90
+ERROR 6 BCInsight.Controllers.MultibrandIncentiveRuleController - System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Models.MultibrandIncentiveViewModel..ctor(tblMultiBrandIncentiveRule multirand) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Models\MultibrandIncentiveViewModel.cs:line 18
+   at BCInsight.Controllers.MultibrandIncentiveRuleController.Update(Nullable`1 ruleid) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\MultibrandIncentiveRuleController.cs:line 90
+ERROR 37 BCInsight.Controllers.MultibrandIncentiveRuleController - System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Models.MultibrandIncentiveViewModel..ctor(tblMultiBrandIncentiveRule multirand) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Models\MultibrandIncentiveViewModel.cs:line 18
+   at BCInsight.Controllers.MultibrandIncentiveRuleController.Update(Nullable`1 ruleid) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\MultibrandIncentiveRuleController.cs:line 90
+ERROR 74 BCInsight.Controllers.MultibrandIncentiveRuleController - System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Models.MultibrandIncentiveViewModel..ctor(tblMultiBrandIncentiveRule multirand) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Models\MultibrandIncentiveViewModel.cs:line 18
+   at BCInsight.Controllers.MultibrandIncentiveRuleController.Update(Nullable`1 ruleid) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\MultibrandIncentiveRuleController.cs:line 90
+ERROR 78 BCInsight.Controllers.MultibrandIncentiveRuleController - System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Models.MultibrandIncentiveViewModel..ctor(tblMultiBrandIncentiveRule multirand) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Models\MultibrandIncentiveViewModel.cs:line 18
+   at BCInsight.Controllers.MultibrandIncentiveRuleController.Update(Nullable`1 ruleid) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\MultibrandIncentiveRuleController.cs:line 90
+ERROR 77 BCInsight.Controllers.MultibrandIncentiveRuleController - System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Models.MultibrandIncentiveViewModel..ctor(tblMultiBrandIncentiveRule multirand) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Models\MultibrandIncentiveViewModel.cs:line 18
+   at BCInsight.Controllers.MultibrandIncentiveRuleController.Update(Nullable`1 ruleid) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\MultibrandIncentiveRuleController.cs:line 90
+ERROR 12 BCInsight.Controllers.MultibrandIncentiveRuleController - System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Models.MultibrandIncentiveViewModel..ctor(tblMultiBrandIncentiveRule multirand) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Models\MultibrandIncentiveViewModel.cs:line 18
+   at BCInsight.Controllers.MultibrandIncentiveRuleController.Update(Nullable`1 ruleid) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\MultibrandIncentiveRuleController.cs:line 90
+ERROR 80 BCInsight.Controllers.MultibrandIncentiveRuleController - System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Models.MultibrandIncentiveViewModel..ctor(tblMultiBrandIncentiveRule multirand) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Models\MultibrandIncentiveViewModel.cs:line 18
+   at BCInsight.Controllers.MultibrandIncentiveRuleController.Update(Nullable`1 ruleid) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\MultibrandIncentiveRuleController.cs:line 90
+ERROR 85 BCInsight.Controllers.MultibrandIncentiveRuleController - System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Models.MultibrandIncentiveViewModel..ctor(tblMultiBrandIncentiveRule multirand) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Models\MultibrandIncentiveViewModel.cs:line 18
+   at BCInsight.Controllers.MultibrandIncentiveRuleController.Update(Nullable`1 ruleid) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\MultibrandIncentiveRuleController.cs:line 90
+ERROR 93 BCInsight.Controllers.MultibrandIncentiveRuleController - System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Models.MultibrandIncentiveViewModel..ctor(tblMultiBrandIncentiveRule multirand) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Models\MultibrandIncentiveViewModel.cs:line 18
+   at BCInsight.Controllers.MultibrandIncentiveRuleController.Update(Nullable`1 ruleid) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\MultibrandIncentiveRuleController.cs:line 90
+ERROR 104 BCInsight.Controllers.MultibrandIncentiveRuleController - System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Models.MultibrandIncentiveViewModel..ctor(tblMultiBrandIncentiveRule multirand) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Models\MultibrandIncentiveViewModel.cs:line 18
+   at BCInsight.Controllers.MultibrandIncentiveRuleController.Update(Nullable`1 ruleid) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\MultibrandIncentiveRuleController.cs:line 90
+ERROR 107 BCInsight.Controllers.MultibrandIncentiveRuleController - System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Models.MultibrandIncentiveViewModel..ctor(tblMultiBrandIncentiveRule multirand) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Models\MultibrandIncentiveViewModel.cs:line 18
+   at BCInsight.Controllers.MultibrandIncentiveRuleController.Update(Nullable`1 ruleid) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\MultibrandIncentiveRuleController.cs:line 90
+ERROR 111 BCInsight.Controllers.MultibrandIncentiveRuleController - System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Models.MultibrandIncentiveViewModel..ctor(tblMultiBrandIncentiveRule multirand) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Models\MultibrandIncentiveViewModel.cs:line 18
+   at BCInsight.Controllers.MultibrandIncentiveRuleController.Update(Nullable`1 ruleid) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\MultibrandIncentiveRuleController.cs:line 90
+ERROR 110 BCInsight.Controllers.MultibrandIncentiveRuleController - System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Models.MultibrandIncentiveViewModel..ctor(tblMultiBrandIncentiveRule multirand) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Models\MultibrandIncentiveViewModel.cs:line 18
+   at BCInsight.Controllers.MultibrandIncentiveRuleController.Update(Nullable`1 ruleid) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\MultibrandIncentiveRuleController.cs:line 90
+ERROR 110 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\HelperClass\Utility.cs:line 19
+ERROR 110 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : Object reference not set to an instance of an object.
+ERROR 110 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\HelperClass\Utility.cs:line 19
+ERROR 110 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : Object reference not set to an instance of an object.
+ERROR 111 BCInsight.Controllers.MultibrandIncentiveRuleController - System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Models.MultibrandIncentiveViewModel..ctor(tblMultiBrandIncentiveRule multirand) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Models\MultibrandIncentiveViewModel.cs:line 18
+   at BCInsight.Controllers.MultibrandIncentiveRuleController.Update(Nullable`1 ruleid) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\MultibrandIncentiveRuleController.cs:line 90
+ERROR 111 BCInsight.Controllers.MultibrandIncentiveRuleController - System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Models.MultibrandIncentiveViewModel..ctor(tblMultiBrandIncentiveRule multirand) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Models\MultibrandIncentiveViewModel.cs:line 18
+   at BCInsight.Controllers.MultibrandIncentiveRuleController.Update(Nullable`1 ruleid) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\MultibrandIncentiveRuleController.cs:line 90
+ERROR 76 BCInsight.Controllers.MultibrandIncentiveRuleController - System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Models.MultibrandIncentiveViewModel..ctor(tblMultiBrandIncentiveRule multirand) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Models\MultibrandIncentiveViewModel.cs:line 18
+   at BCInsight.Controllers.MultibrandIncentiveRuleController.Update(Nullable`1 ruleid) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\MultibrandIncentiveRuleController.cs:line 90
+ERROR 99 BCInsight.Controllers.MultibrandIncentiveRuleController - System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Models.MultibrandIncentiveViewModel..ctor(tblMultiBrandIncentiveRule multirand) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Models\MultibrandIncentiveViewModel.cs:line 18
+   at BCInsight.Controllers.MultibrandIncentiveRuleController.Update(Nullable`1 ruleid) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\MultibrandIncentiveRuleController.cs:line 90
+ERROR 98 BCInsight.Controllers.MultibrandIncentiveRuleController - System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Models.MultibrandIncentiveViewModel..ctor(tblMultiBrandIncentiveRule multirand) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Models\MultibrandIncentiveViewModel.cs:line 18
+   at BCInsight.Controllers.MultibrandIncentiveRuleController.Update(Nullable`1 ruleid) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\MultibrandIncentiveRuleController.cs:line 90
+ERROR 73 BCInsight.Controllers.MultibrandIncentiveRuleController - System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at BCInsight.Controllers.MultibrandIncentiveRuleController.Update(MultibrandIncentiveViewModel model) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\MultibrandIncentiveRuleController.cs:line 162
+ERROR 6 BCInsight.Controllers.MultibrandIncentiveRuleController - System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Models.MultibrandIncentiveViewModel..ctor(tblMultiBrandIncentiveRule multirand) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Models\MultibrandIncentiveViewModel.cs:line 18
+   at BCInsight.Controllers.MultibrandIncentiveRuleController.Update(Nullable`1 ruleid) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\MultibrandIncentiveRuleController.cs:line 90
+ERROR 6 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\HelperClass\Utility.cs:line 19
+ERROR 6 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : Object reference not set to an instance of an object.
+ERROR 6 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\HelperClass\Utility.cs:line 19
+ERROR 6 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : Object reference not set to an instance of an object.
+ERROR 7 BCInsight.Controllers.MultibrandIncentiveRuleController - System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Models.MultibrandIncentiveViewModel..ctor(tblMultiBrandIncentiveRule multirand) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Models\MultibrandIncentiveViewModel.cs:line 18
+   at BCInsight.Controllers.MultibrandIncentiveRuleController.Update(Nullable`1 ruleid) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\MultibrandIncentiveRuleController.cs:line 90
+ERROR 6 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\HelperClass\Utility.cs:line 19
+ERROR 6 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : Object reference not set to an instance of an object.
+ERROR 6 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\HelperClass\Utility.cs:line 19
+ERROR 6 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : Object reference not set to an instance of an object.
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\HelperClass\Utility.cs:line 19
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : Object reference not set to an instance of an object.
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\HelperClass\Utility.cs:line 19
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : Object reference not set to an instance of an object.
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\HelperClass\Utility.cs:line 19
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : Object reference not set to an instance of an object.
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\HelperClass\Utility.cs:line 19
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : Object reference not set to an instance of an object.
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\HelperClass\Utility.cs:line 19
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : Object reference not set to an instance of an object.
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\HelperClass\Utility.cs:line 19
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : Object reference not set to an instance of an object.
+ERROR 6 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\HelperClass\Utility.cs:line 19
+ERROR 6 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : Object reference not set to an instance of an object.
+ERROR 6 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\HelperClass\Utility.cs:line 19
+ERROR 6 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : Object reference not set to an instance of an object.
+ERROR 6 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\HelperClass\Utility.cs:line 19
+ERROR 6 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : Object reference not set to an instance of an object.
+ERROR 6 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\HelperClass\Utility.cs:line 19
+ERROR 6 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : Object reference not set to an instance of an object.
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\HelperClass\Utility.cs:line 19
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : Object reference not set to an instance of an object.
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\HelperClass\Utility.cs:line 19
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : Object reference not set to an instance of an object.
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\HelperClass\Utility.cs:line 19
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : Object reference not set to an instance of an object.
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\HelperClass\Utility.cs:line 19
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : Object reference not set to an instance of an object.
+ERROR 6 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\HelperClass\Utility.cs:line 19
+ERROR 6 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : Object reference not set to an instance of an object.
+ERROR 6 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\HelperClass\Utility.cs:line 19
+ERROR 6 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : Object reference not set to an instance of an object.
+ERROR 6 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\HelperClass\Utility.cs:line 19
+ERROR 6 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : Object reference not set to an instance of an object.
+ERROR 6 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\HelperClass\Utility.cs:line 19
+ERROR 6 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : Object reference not set to an instance of an object.
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\HelperClass\Utility.cs:line 19
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : Object reference not set to an instance of an object.
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\HelperClass\Utility.cs:line 19
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : Object reference not set to an instance of an object.
+ERROR 6 BCInsight.Controllers.VendorMgmtController - System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   at System.Convert.ToDateTime(String value, IFormatProvider provider)
+   at System.String.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at BCInsight.Controllers.VendorMgmtController.UploadExcel(HttpPostedFileBase upload_file) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\VendorMgmtController.cs:line 181
+ERROR 5 BCInsight.Controllers.VendorMgmtController - System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   at System.Convert.ToDateTime(String value, IFormatProvider provider)
+   at System.String.System.IConvertible.ToDateTime(IFormatProvider provider)
+   at System.Convert.ToDateTime(Object value)
+   at BCInsight.Controllers.VendorMgmtController.UploadExcel(HttpPostedFileBase upload_file) in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\VendorMgmtController.cs:line 181
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\HelperClass\Utility.cs:line 19
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : Object reference not set to an instance of an object.
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\HelperClass\Utility.cs:line 19
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : Object reference not set to an instance of an object.
+ERROR 15 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\HelperClass\Utility.cs:line 19
+ERROR 15 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : Object reference not set to an instance of an object.
+ERROR 15 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\HelperClass\Utility.cs:line 19
+ERROR 15 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : Object reference not set to an instance of an object.
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\HelperClass\Utility.cs:line 19
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : Object reference not set to an instance of an object.
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Web.HelperClass.Utility.GetLoggedInUser() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\HelperClass\Utility.cs:line 19
+ERROR 5 BCInsight.Web.HelperClass.Utility - Error from BCInsight Utility User : Object reference not set to an instance of an object.

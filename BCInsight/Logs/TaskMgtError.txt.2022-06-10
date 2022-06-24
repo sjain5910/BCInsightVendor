@@ -1,0 +1,25 @@
+ERROR 5 BCInsight.Controllers.ReportController - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Convert.ToDecimal(String value)
+   at BCInsight.Controllers.ReportController.ExportDailysalereport(String Startdate, String Enddate) in D:\Aegis Project\BCInsightVendor\BCInsightVendor\BCInsight\Controllers\ReportController.cs:line 1378
+ERROR 7 BCInsight.Controllers.ReportController - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Convert.ToDecimal(String value)
+   at BCInsight.Controllers.ReportController.ExportDailysalereport(String Startdate, String Enddate) in D:\Aegis Project\BCInsightVendor\BCInsightVendor\BCInsight\Controllers\ReportController.cs:line 1378
+ERROR 6 BCInsight.Controllers.ReportController - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Convert.ToDecimal(String value)
+   at BCInsight.Controllers.ReportController.ExportDailysalereport(String Startdate, String Enddate) in D:\Aegis Project\BCInsightVendor\BCInsightVendor\BCInsight\Controllers\ReportController.cs:line 1378
+ERROR 7 BCInsight.Controllers.ReportController - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Convert.ToDecimal(String value)
+   at BCInsight.Controllers.ReportController.ExportDailysalereport(String Startdate, String Enddate) in D:\Aegis Project\BCInsightVendor\BCInsightVendor\BCInsight\Controllers\ReportController.cs:line 1378
+ERROR 6 BCInsight.Controllers.ReportController - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Convert.ToDecimal(String value)
+   at BCInsight.Controllers.ReportController.ExportDailysalereport(String Startdate, String Enddate) in D:\Aegis Project\BCInsightVendor\BCInsightVendor\BCInsight\Controllers\ReportController.cs:line 1399

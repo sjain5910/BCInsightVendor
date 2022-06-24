@@ -1,0 +1,207 @@
+﻿@model BCInsight.Models.RegisterUser
+@{
+    ViewBag.Title = "Register User";
+}
+<div class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+
+                <h1 class="m-0">Register User</h1>
+
+            </div><!-- /.col -->
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="@Url.Action("Index","Home")">Home</a></li>
+                    <li class="breadcrumb-item active"><a href="@Url.Action("Users","Login")">User Management</a></li>
+                </ol>
+            </div><!-- /.col -->
+        </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+</div>
+<!-- /.content-header -->
+<!-- Horizontal Form -->
+<div class="card card-info">
+    <div class="card-header">
+        <h3 class="card-title">Register User</h3>
+        <a type="button" class="float-right" href="@Url.Action("Users","Login")">BACK <i class="fas fa-reply"></i></a>
+    </div>
+    <!-- /.card-header -->
+    <!-- form start -->
+    @using (Html.BeginForm("Register", "Login", FormMethod.Post, new { enctype = "multipart/form-data", id = "AddNewUser" }))
+    {
+        @Html.HiddenFor(c => c.admin_id)
+        <div class="card-body">
+            <div class="form-group row">
+                <label for="inputPassword3" class="col-sm-2 col-form-label">FullName <span class="requiredSign">*</span></label>
+                <div class="col-sm-10">
+                    @Html.TextBoxFor(c => c.fullName, new { @type = "text", @class = "form-control", placeholder = "Full Name", @maxLength = "50" })
+                    @Html.ValidationMessageFor(m => m.fullName, "", new { @class = "error fullName" })
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword3" class="col-sm-2 col-form-label">Login Id <span class="requiredSign">*</span></label>
+                <div class="col-sm-10">
+                    @Html.TextBoxFor(c => c.loginId, new { @type = "text", @class = "form-control", placeholder = "Login Id", @maxLength = "50" })
+                    @Html.ValidationMessageFor(m => m.loginId, "", new { @class = "error loginId" })
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword3" class="col-sm-2 col-form-label">Password <span class="requiredSign">*</span></label>
+                <div class="col-sm-10">
+                    <div class="input-group" id="show_hide_password">
+                        @if (Model.admin_id > 0)
+                        {
+                            @Html.TextBoxFor(c => c.password, new { @type = "Password", @class = "form-control fas fa-eye", placeholder = "Password", @disabled = "disabled", @maxLength = "50", @minLength = "2" })
+
+                        }
+                        else
+                        {
+                            @Html.TextBoxFor(c => c.password, new { @type = "Password", @class = "form-control fas fa-eye", placeholder = "Password", @maxLength = "50", @minLength = "2" })
+                        }
+
+                        <div class="input-group-addon">
+                            <span id="Showhidepassword" class="fas fa-eye-slash form-control" aria-hidden="true"></span>
+                        </div>
+                    </div>
+                    @Html.ValidationMessageFor(m => m.password, "", new { @class = "error password" })
+
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword3" class="col-sm-2 col-form-label">Conform Password <span class="requiredSign">*</span></label>
+                <div class="col-sm-10">
+                    <div class="input-group" id="show_hide_password">
+                        @if (Model.admin_id > 0)
+                        {
+                            @Html.TextBoxFor(c => c.Conformpassword, new { @type = "Password", @class = "form-control fas fa-eye", placeholder = "Password", @disabled = "disabled", @maxLength = "50", @minLength = "2", @onchange = "CheckPassword(this.value)" })
+
+                        }
+                        else
+                        {
+                            @Html.TextBoxFor(c => c.Conformpassword, new { @type = "Password", @class = "form-control fas fa-eye", placeholder = "Password", @maxLength = "50", @minLength = "2", @onchange = "CheckPassword(this.value)" })
+                        }
+
+                        <div class="input-group-addon">
+                            <span id="ShowhideCpassword" class="fas fa-eye-slash form-control" aria-hidden="true"></span>
+                        </div>
+                    </div>
+                    @Html.ValidationMessageFor(m => m.Conformpassword, "", new { @class = "error Conformpasswordcs" })
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword3" class="col-sm-2 col-form-label">User Type <span class="requiredSign">*</span></label>
+                <div class="col-sm-10">
+                    @Html.DropDownListFor(m => m.userType, new List<SelectListItem>
+                    {
+                        new SelectListItem{ Text="Admin", Value = "Admin" },
+                        new SelectListItem{ Text="User", Value = "User" },
+                    }, new { @class = "form-control", @style = "width: 100%;" })
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword3" class="col-sm-2 col-form-label">IsActive<span class="requiredSign"></span></label>
+                <div class="col-sm-1">
+                    @Html.CheckBoxFor(c => c.isActive, new { @class = "form-control", @style = "Height: 70%;" })
+                    @Html.ValidationMessageFor(m => m.isActive, "", new { @class = "error" })
+                </div>
+            </div>
+
+        </div>
+        <!-- /.card-body -->
+        <div class="card-footer">
+            <button type="submit" class="btn btn-primary btnregister">Register</button>
+        </div>
+        <div class="login-error" style="color:red;">@TempData["Message"]</div>
+        <!-- /.card-footer -->
+    }
+</div>
+<!-- /.card -->
+<!-- jQuery -->
+<script src="~/plugins/jquery/jquery.min.js"></script>
+<script>
+    $(function () {
+        debugger;
+        $("#Showhidepassword").click(function () {
+            if ($('#password').attr("type") == "text") {
+                $('#password').attr('type', 'password');
+                $('#Showhidepassword').addClass("fa-eye-slash");
+            }
+            else {
+                $('#password').attr('type', 'text');
+                $('#Showhidepassword').addClass("fa-eye");
+            }
+        });
+
+        debugger;
+        $("#ShowhideCpassword").click(function () {
+            if ($('#Conformpassword').attr("type") == "text") {
+                $('#Conformpassword').attr('type', 'password');
+                $('#Showhidepassword').addClass("fa-eye-slash");
+            }
+            else {
+                $('#Conformpassword').attr('type', 'text');
+                $('#Showhidepassword').addClass("fa-eye");
+            }
+        });
+    });
+    function CheckPassword(val) {
+        debugger;
+        var password = $("#password").val();
+        var Cpassword = $("#Conformpassword").val();
+        if (password != Cpassword && (password !=''&& Cpassword !='')) {
+            alert('confirm password not match');
+            return false;
+        }
+    }
+    $(".btnregister").click(function () {
+        debugger
+        var flag = true;
+        var loginIdmsg = '', passwordmsg = '', cpassmsg = '', fullNamemsg = '';
+        var loginId = $("#loginId").val();
+        var password = $("#password").val();
+        var Conformpassword = $("#Conformpassword").val();
+        var fullName = $("#fullName").val();
+
+        if (IsNullOrUndefined(loginId)) {
+            loginIdmsg = "Required loginId";
+            flag = false;
+        }
+
+        if (IsNullOrUndefined(password)) {
+            passwordmsg = "Required password";
+            flag = false;
+        }
+
+        if (IsNullOrUndefined(Conformpassword)) {
+            cpassmsg = "Required Conformpassword";
+            flag = false;
+        }
+
+        if (IsNullOrUndefined(fullName)) {
+            fullNamemsg = "Required FullName";
+            flag = false;
+        }
+        
+
+        if (!flag) {
+            $(".Conformpasswordcs").html(cpassmsg);
+            $(".loginId").html(loginIdmsg);
+            $(".password").html(passwordmsg);
+            $(".fullName").html(fullNamemsg);
+            $("#ajax-loader").hide();
+            return false;
+        }
+        else {
+            if (password!= Conformpassword) {
+            alert("Password Doesn't Match")            
+            return false;
+        }
+            $("#AddNewUser")[0].submit();
+        }
+    });
+    function IsNullOrUndefined(pvalue) {
+        return pvalue === undefined || pvalue === null || pvalue === '';
+    }
+
+</script>

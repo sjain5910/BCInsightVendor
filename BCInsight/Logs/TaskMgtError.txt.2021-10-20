@@ -1,0 +1,7 @@
+INFO 6 BCInsight.Controllers.HomeController - User: DESKTOP-LPOUG0E & IP: ::1
+INFO 6 BCInsight.Controllers.HomeController - User: DESKTOP-LPOUG0E & IP: ::1
+INFO 6 BCInsight.Controllers.HomeController - User: DESKTOP-LPOUG0E & IP: ::1
+INFO 8 BCInsight.Controllers.HomeController - User: DESKTOP-LPOUG0E & IP: ::1
+ERROR 11 BCInsight.Controllers.SalesMgmtController - System.NullReferenceException: Object reference not set to an instance of an object.
+   at BCInsight.Controllers.SalesMgmtController.Index() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\SalesMgmtController.cs:line 42
+INFO 8 BCInsight.Controllers.HomeController - User: DESKTOP-LPOUG0E & IP: ::1

@@ -1,0 +1,82 @@
+﻿@model BCInsight.Models.vendorDailySaleReportviewModel
+@{
+    ViewBag.Title = "Index";
+}
+<div class="card card-info">
+    @foreach (var item in Model.brandlist)
+    {
+        <div class="card-header">
+            <h3 class="card-title">@item.Brandname</h3>
+        </div>
+        <div class="card-body">
+            <div class="form-group">
+
+                @if (item.salelist.Count > 0)
+                {
+                    <div class="row" style="overflow:scroll; width:100%">
+                        <table id="vendordailysale" class="display table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>SALEDATE</th>
+                                    <th>SITE_NAME</th>
+                                    <th>DIVISION</th>
+                                    <th>CAT2</th>
+                                    <th>BILL_NO</th>
+                                    <th>SECTION</th>
+                                    <th>PRODUCT</th>
+                                    <th>CODE</th>
+                                    <th>ITEM DESC6</th>
+                                    <th>COLOR</th>
+                                    <th>SIZE</th>
+                                    <th>SALE QTY</th>
+                                    <th>MRPAMT (A)</th>
+                                    <th>PRMOAMT (B)</th>
+                                    <th>ITEM DISCOUNT AMT (C)</th>
+                                    <th>BILL DISCOUNT AMT (D)</th>
+                                    <th>LP DISCOUNT AMT (E)</th>
+                                    <th>EXTAXAMT FACTOR(F)</th>
+                                    <th>Net Amt</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var sales in item.salelist)
+                                {
+                                    <tr>
+                                        <td>@Convert.ToString(string.Format("{0:dd-MM-yyyy}", sales.saleDate))</td>
+                                        <td>@sales.siteName</td>
+                                        <td>@sales.department</td>
+                                        <td>@sales.cat2</td>
+                                        <td>@sales.billNo</td>
+                                        <td>@sales.section</td>
+                                        <td>@sales.product</td>
+                                        <td>@sales.cat6code</td>
+                                        <td>@sales.ItemDesc6</td>
+                                        <td>@sales.cat3color</td>
+                                        <td>@sales.cat4size</td>
+                                        <td>@sales.saleQty</td>
+                                        <td>@sales.mrpAmt</td>
+                                        <td>@sales.product</td>
+                                        <td>@sales.ItemDiscountAmt</td>
+                                        <td>@sales.BillDiscountAmt</td>
+                                        <td>@sales.LPDiscountAmt</td>
+                                        <td>@sales.ExTaxAmtFactor</td>
+                                        <td>@sales.netAmt</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+
+                }
+                else
+                {
+                    <div align="center" id="msg" style="padding-top:15px;">
+                        <div class="alert alert-success">No Result found.</div>
+                    </div>
+                }
+
+
+            </div>
+        </div>
+    }
+</div>

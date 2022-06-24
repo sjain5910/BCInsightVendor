@@ -1,0 +1,350 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{15D513CA-8101-487C-B46A-B2D7AEC23AAB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BCInsight.DAL</RootNamespace>
+    <AssemblyName>BCInsight.DAL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BCInsight.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BCInsight.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BCInsight.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BCInsight.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BCInsight.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="gethighestbillofthedayReport_Result.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetNotificationDetailsbyId_Result.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetNotificationDetails_Result.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetNotificationFilterDetails2_Result.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetNotificationFilterDetails_Result.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetprivatelabelDetails_Result.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetprivatelabelSlabDetails2_Result.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetprivatelabelSlabDetails_Result.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetprivatelabelSlabExport2_Result.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetprivatelabelSlabReport2_Result.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SP_BaseQtySiteReport_Result.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_BaseQtySiterpt_Result.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_DailyProductPerformance_Result.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_dashboard_Result.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetAllStockDetails_Result.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetAppNotificationAPI_Result.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetAppNotificationMOMAPI_Result.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetDailySaleforCurrentweek_Result.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_Getdailysalescontchart_Result.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_Getdailysalescont_Result.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_getDailyturnAPI_Result.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sp_GetDashboardSale_Result.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetHighestBillOfTheDay_Result.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetHighestSellingAmountOfTheDay_Result.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetHighestSellOfThemonthDepartmentwise_Result.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetManofmonthAPI_Result.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_getManOfthDayAPI_Result.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetMonthlysalescont_Result.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetpspfddetailreportmonthwithSite_Result.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_Getpspfddetailreportmonth_Result.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetPvtLabelGroupDetailsInfo_Result.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_getsalepersonbrandwisesaleAPI_Result.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetSaleUpdateDailyCW_Result.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetsellthroughstockDetailsdivision_Result.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetsellthroughstockDetailswithsite_Result.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetSitePerformanceYearly_Result.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetTopBrandSaleChart_Result.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetTopBrandSaledetailsChart_Result.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_gettopsalepersonDaily_Result.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_gettopsalepersonMonthly_Result.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_gettopsalepersonYearly_Result.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetWeeklyIncentive_Result.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_ProductPerformancebetweendate_Result.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sp_pvtlblincentivereportapi2_Result.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_ReportTop20CustomerOfQuarter_Result.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_saleupdatechart_Result.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_Top20CustomerOfQuarterReport_Result.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_TopSalePersonDashboardChart_Result.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_TopSalePersonDashboard_Result.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_VendorTemplateDaywiseComparisionofsaleLastdate_Result.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_VendorTemplateDaywiseComparisionofsalemonthsummary_Result.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_VendorTemplateDaywiseComparisionofsale_Result.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_VendorTemplateweeklysalereport_Result.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TblAdminLog.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblAdminUser.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TblApiLog.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblAttendance.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblbaseqty.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblBrand.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblColor.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblDepartment.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblDesignation.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblDivision.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TblLog.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblMultiBrandIncentiveRule.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblNotification.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblPvtLabelGroup.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblPvtLabelName.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblPvtLabelSlab.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblQuarter.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblsale.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSection.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSite.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSiteSetting.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSize.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSlab.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblstock.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblUser.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblVendor.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblVendorBrand.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblVendorLoginHistory.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblVendorsalesperson.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblWeeklytargetincentive.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblWeekMaster.cs">
+      <DependentUpon>BCInsight.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <EntityDeploy Include="BCInsight.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>BCInsight.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="BCInsight.edmx.diagram">
+      <DependentUpon>BCInsight.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BCInsight.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BCInsight.edmx</DependentUpon>
+      <LastGenOutput>BCInsight.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="BCInsight.edmx.sql" />
+    <Content Include="BCInsight.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BCInsight.edmx</DependentUpon>
+      <LastGenOutput>BCInsight.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

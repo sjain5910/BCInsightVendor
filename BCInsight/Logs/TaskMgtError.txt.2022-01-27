@@ -1,0 +1,60 @@
+ERROR 7 BCInsight.Controllers.HomeController - System.DivideByZeroException: Attempted to divide by zero.
+   at System.Decimal.FCallDivide(Decimal& d1, Decimal& d2)
+   at System.Decimal.op_Division(Decimal d1, Decimal d2)
+   at BCInsight.Controllers.HomeController.getdailynetsaleamt() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 142
+ERROR 13 BCInsight.Controllers.HomeController - System.DivideByZeroException: Attempted to divide by zero.
+   at BCInsight.Controllers.HomeController.getdailyStockUpdate() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 201
+ERROR 11 BCInsight.Controllers.HomeController - System.DivideByZeroException: Attempted to divide by zero.
+   at System.Decimal.FCallDivide(Decimal& d1, Decimal& d2)
+   at System.Decimal.op_Division(Decimal d1, Decimal d2)
+   at BCInsight.Controllers.HomeController.getdailynetsaleamt() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 142
+ERROR 13 BCInsight.Controllers.HomeController - System.DivideByZeroException: Attempted to divide by zero.
+   at BCInsight.Controllers.HomeController.getdailyStockUpdate() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 201
+ERROR 8 BCInsight.Controllers.HomeController - System.DivideByZeroException: Attempted to divide by zero.
+   at System.Decimal.FCallDivide(Decimal& d1, Decimal& d2)
+   at System.Decimal.op_Division(Decimal d1, Decimal d2)
+   at BCInsight.Controllers.HomeController.getdailynetsaleamt() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 142
+ERROR 12 BCInsight.Controllers.HomeController - System.DivideByZeroException: Attempted to divide by zero.
+   at BCInsight.Controllers.HomeController.getdailyStockUpdate() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 201
+ERROR 11 BCInsight.Controllers.HomeController - System.DivideByZeroException: Attempted to divide by zero.
+   at BCInsight.Controllers.HomeController.getdailyStockUpdate() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 201
+ERROR 8 BCInsight.Controllers.HomeController - System.DivideByZeroException: Attempted to divide by zero.
+   at System.Decimal.FCallDivide(Decimal& d1, Decimal& d2)
+   at System.Decimal.op_Division(Decimal d1, Decimal d2)
+   at BCInsight.Controllers.HomeController.getdailynetsaleamt() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 142
+ERROR 10 BCInsight.Controllers.HomeController - System.DivideByZeroException: Attempted to divide by zero.
+   at BCInsight.Controllers.HomeController.getdailyStockUpdate() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 201
+ERROR 8 BCInsight.Controllers.HomeController - System.DivideByZeroException: Attempted to divide by zero.
+   at System.Decimal.FCallDivide(Decimal& d1, Decimal& d2)
+   at System.Decimal.op_Division(Decimal d1, Decimal d2)
+   at BCInsight.Controllers.HomeController.getdailynetsaleamt() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 142
+ERROR 6 BCInsight.Controllers.HomeController - System.DivideByZeroException: Attempted to divide by zero.
+   at BCInsight.Controllers.HomeController.getdailyStockUpdate() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 201
+ERROR 12 BCInsight.Controllers.HomeController - System.DivideByZeroException: Attempted to divide by zero.
+   at System.Decimal.FCallDivide(Decimal& d1, Decimal& d2)
+   at System.Decimal.op_Division(Decimal d1, Decimal d2)
+   at BCInsight.Controllers.HomeController.getdailynetsaleamt() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 142
+ERROR 8 BCInsight.Controllers.HomeController - System.DivideByZeroException: Attempted to divide by zero.
+   at BCInsight.Controllers.HomeController.getdailyStockUpdate() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 201
+ERROR 10 BCInsight.Controllers.HomeController - System.DivideByZeroException: Attempted to divide by zero.
+   at System.Decimal.FCallDivide(Decimal& d1, Decimal& d2)
+   at System.Decimal.op_Division(Decimal d1, Decimal d2)
+   at BCInsight.Controllers.HomeController.getdailynetsaleamt() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 142
+ERROR 7 BCInsight.Controllers.HomeController - System.DivideByZeroException: Attempted to divide by zero.
+   at System.Decimal.FCallDivide(Decimal& d1, Decimal& d2)
+   at System.Decimal.op_Division(Decimal d1, Decimal d2)
+   at BCInsight.Controllers.HomeController.getdailynetsaleamt() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 142
+ERROR 11 BCInsight.Controllers.HomeController - System.DivideByZeroException: Attempted to divide by zero.
+   at BCInsight.Controllers.HomeController.getdailyStockUpdate() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 201
+ERROR 11 BCInsight.Controllers.HomeController - System.DivideByZeroException: Attempted to divide by zero.
+   at System.Decimal.FCallDivide(Decimal& d1, Decimal& d2)
+   at System.Decimal.op_Division(Decimal d1, Decimal d2)
+   at BCInsight.Controllers.HomeController.getdailynetsaleamt() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 142
+ERROR 7 BCInsight.Controllers.HomeController - System.DivideByZeroException: Attempted to divide by zero.
+   at BCInsight.Controllers.HomeController.getdailyStockUpdate() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 201
+ERROR 10 BCInsight.Controllers.HomeController - System.DivideByZeroException: Attempted to divide by zero.
+   at BCInsight.Controllers.HomeController.getdailyStockUpdate() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 201
+ERROR 7 BCInsight.Controllers.HomeController - System.DivideByZeroException: Attempted to divide by zero.
+   at System.Decimal.FCallDivide(Decimal& d1, Decimal& d2)
+   at System.Decimal.op_Division(Decimal d1, Decimal d2)
+   at BCInsight.Controllers.HomeController.getdailynetsaleamt() in D:\Aegis Project\BCInsight\BCInsight\BCInsight\Controllers\HomeController.cs:line 142

@@ -1,0 +1,298 @@
+﻿@using BCInsight.Web.HelperClass
+@model BCInsight.Models.DashboardViewModel
+@{
+    ViewBag.Title = "Home Page";
+    var currentUser = Utility.CurrentLoginUser;
+    if (currentUser == null)
+    {
+        Response.Redirect(Url.Action("Index", "Login", new { Area = "" }));
+    }
+}
+
+<!-- Content Header (Page header) -->
+<div class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1 class="m-0">Dashboard</h1>
+            </div><!-- /.col -->
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="@Url.Action("")">Home</a></li>
+                    @*<li class="breadcrumb-item active">Dashboard v2</li>*@
+                </ol>
+            </div><!-- /.col -->
+        </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+</div>
+<!-- /.content-header -->
+<!-- Info boxes -->
+<div class="row">
+    <div class="text-center d-flex col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+        <div class="cr-myCard card justify-content-around w-100 cursor-auto ">
+            <div class="text-primary">
+                <div class="">
+                    <div class="d-inline-block divTitle w-100">
+                        <span class="titleSelection" title="Average Age">
+                            <span>
+                                Sales Update
+                                <i class="far fa-tachometer-alt"></i>
+                            </span>
+
+                            <small class="text-muted text-capitalize"></small>
+                        </span>
+                    </div>
+                    <div class="d-inline-block w-100"></div>
+                </div>
+            </div>
+            <div class="card-body slideBottomToUp d-block pt-0">
+                <div class="row">
+                    <div class="span6 w-50">
+                        <span class="ovr-text col-12"> @Model.BeforeYesterdaySaleAmount</span>
+                        <span class="text-muted col-12">@Model.PastDay </span>
+                    </div>
+                    <div class="span6 w-50">
+                        <span class="ovr-text col-12">@Model.YesterdaySaleAmount</span>
+                        <span class="text-muted col-12">Yesterday</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-center d-flex col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+        <div class="cr-myCard card justify-content-around w-100 cursor-auto ">
+            <div class="text-primary">
+                <div class="">
+                    <div class="d-inline-block divTitle w-100">
+                        <span class="titleSelection" title="Average Age">
+                            <span>
+                                Todays Stock Update
+                                <i class="far fa-tachometer-alt"></i>
+                            </span>
+
+                            <small class="text-muted text-capitalize"></small>
+                        </span>
+                    </div>
+                    <div class="d-inline-block w-100"></div>
+                </div>
+            </div>
+            <div class="card-body slideBottomToUp d-block pt-0">
+                <div class="row">
+                    <div class="span6 w-50">
+                        <span class="ovr-text col-12">@Model.TotalStock</span>
+                        <span class="text-muted col-12">Available Stock Quantity</span>
+                    </div>
+                    <div class="span6 w-50">
+                        <span class="ovr-text col-12">@Model.TotalYesterdayAmount</span>
+                        <span class="text-muted col-12">Stock Total Amount</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /.row -->
+
+<div class="row">
+    <div class="col-md-6">
+        <!-- PRODUCT LIST -->
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Top Persons by Sales</h3>
+
+                <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                        <i class="fas fa-minus"></i>
+                    </button>
+                    @*<button type="button" class="btn btn-tool" data-card-widget="remove">
+                            <i class="fas fa-times"></i>
+                        </button>*@
+                </div>
+            </div>
+            <!-- /.card-header -->
+            <div class="card-body p-3">
+                <div class="row">
+
+                    <div class="span6 w-50">
+                        <span class="card-body-title">@Model.PastDay</span>
+                        @if (Model.BeforeYesterdaySales != null)
+                        {
+                            foreach (var item in Model.BeforeYesterdaySales)
+                            {
+                                <ul class="products-list product-list-in-card pl-2 pr-2">
+                                    <li class="item">
+                                        <div class="product-info m-0">
+                                            <a href="javascript:void(0)" class="product-title">
+                                                @item.SalePersonName
+                                                <span class="badge badge-warning float-right">@item.BillAmount INR</span>
+                                            </a>
+                                            <span class="product-description">
+                                                @item.SiteCuid
+                                            </span>
+                                        </div>
+                                        <hr />
+                                    </li>
+                                </ul>
+                            }
+                        }
+                        else
+                        {
+                            <ul class="products-list product-list-in-card pl-2 pr-2">
+                                <li class="item">
+                                    <div class="product-info m-0">
+                                        <a href="javascript:void(0)" class="product-title">
+                                            Sale Not Found On @Model.PastDay
+                                        </a>
+                                    </div>
+                                    <hr />
+                                </li>
+                            </ul>
+                        }
+
+
+                    </div>
+                    <div class="span6 w-50">
+                        <span class="card-body-title">Yesterday</span>
+                        @if (Model.SalesYesterday != null)
+                        {
+                            foreach (var item in Model.SalesYesterday)
+                            {
+                                <ul class="products-list product-list-in-card pl-2 pr-2">
+                                    <li class="item">
+                                        <div class="product-info m-0">
+                                            <a href="javascript:void(0)" class="product-title">
+                                                @item.SalePersonName
+                                                <span class="badge badge-warning float-right">@item.BillAmount INR</span>
+                                            </a>
+                                            <span class="product-description">
+                                                @item.SiteCuid
+                                            </span>
+                                        </div>
+                                        <hr />
+                                    </li>
+                                </ul>
+                            }
+                        }
+                        else
+                        {
+                            <ul class="products-list product-list-in-card pl-2 pr-2">
+                                <li class="item">
+                                    <div class="product-info m-0">
+                                        <a href="javascript:void(0)" class="product-title">
+                                            Sale Not Found On Yesterday
+                                        </a>
+                                    </div>
+                                    <hr />
+                                </li>
+                            </ul>
+                        }
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- /.card-body -->
+            <div class="card-footer text-center">
+                <a href="javascript:void(0)" class="uppercase">View All Persons</a>
+            </div>
+            <!-- /.card-footer -->
+        </div>
+        <!-- /.card -->
+    </div>
+    <div class="col-md-6">
+        <!-- PRODUCT LIST -->
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Top Brands Sale</h3>
+                <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                        <i class="fas fa-minus"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- /.card-header -->
+            <div class="card-body p-3">
+                <div class="row">
+                    <div class="span6 w-50">
+                        <span class="card-body-title">Yesterday</span>
+                        @if (Model.BrandYesterday != null)
+                        {
+                            foreach (var pastbrands in Model.BrandYesterday)
+                            {
+                                <ul class="products-list product-list-in-card pl-2 pr-2">
+                                    <li class="item">
+                                        <div class="mb-0 p-2 bg-success text-uppercase">
+                                            <span class="iconDigit">@pastbrands.Rank</span>
+                                            <span class="">@pastbrands.Brandname</span>
+                                        </div>
+                                    </li>
+                                    <!-- /.item -->
+                                </ul>
+                            }
+                        }
+                        else
+                        {
+                            <ul class="products-list product-list-in-card pl-2 pr-2">
+                                <li class="item">
+                                    <div class="mb-0 p-2 bg-success text-uppercase">
+                                        Brand Not Found On Yesterday
+                                    </div>
+                                </li>
+                                <!-- /.item -->
+                            </ul>
+                        }
+
+
+                        @*<ul class="products-list product-list-in-card pl-2 pr-2">
+                                <li class="item">
+                                    <div class="mb-0 p-2 bg-success text-uppercase">
+                                        <span class="iconDigit">1</span>
+                                        <span class="">BB SPORTS</span>
+                                        <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                    </div>
+                                </li>
+                            </ul>*@
+                    </div>
+                    <div class="span6 w-50">
+                        <span class="card-body-title">@Model.PastDay</span>
+                        @if (Model.BeforeYesterdayBrand != null)
+                        {
+                            foreach (var pastbrands in Model.BeforeYesterdayBrand)
+                            {
+                                <ul class="products-list product-list-in-card pl-2 pr-2">
+                                    <li class="item">
+                                        <div class="mb-0 p-2 bg-info text-uppercase">
+                                            <span class="iconDigit">@pastbrands.Rank</span>
+                                            <span class="">@pastbrands.Brandname</span>
+                                        </div>
+                                    </li>
+                                    <!-- /.item -->
+                                </ul>
+                            }
+                        }
+                        else
+                        {
+                            <ul class="products-list product-list-in-card pl-2 pr-2">
+                                <li class="item">
+                                    <div class="mb-0 p-2 bg-info text-uppercase">
+                                        Brand Not Found On @Model.PastDay
+                                    </div>
+                                </li>
+                                <!-- /.item -->
+                            </ul>
+                        }
+
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- /.card-body -->
+            <div class="card-footer text-center">
+                <a href="javascript:void(0)" class="uppercase">View All Brands</a>
+            </div>
+            <!-- /.card-footer -->
+        </div>
+        <!-- /.card -->
+    </div>
+</div>

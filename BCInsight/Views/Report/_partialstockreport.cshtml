@@ -1,0 +1,74 @@
+﻿@model BCInsight.Models.vendorPortalStockReportViewModel
+@{
+    ViewBag.Title = "Index";
+}
+<div class="card card-info">
+    @if (Model.Sitelist.Count > 0)
+    {
+        foreach (var item in Model.Sitelist)
+        {
+            <div class="card-header">
+                <h3 class="card-title">@item.SiteName</h3>
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    @if (item.brandslist.Count > 0)
+                    {
+                        <div class="row" style="width:100%">
+                            <table style="border:1px; width:100%" class="display compact w-100 table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th style="width:80%">Brand</th>
+                                        <th style="width:20%">Quantity</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var brands in item.brandslist)
+                                    {
+                                        <tr>
+                                            <td>
+                                                @brands.BrandName
+                                                @if (brands.departmentslist.Count > 0)
+                                                {
+                                                    <table class="display compact w-100 table-bordered">
+                                                        <thead>
+                                                            <tr>
+                                                                <th style="width:80%">Department</th>
+                                                                <th style="width:20%">Pcs</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            @foreach (var Departments in brands.departmentslist)
+                                                            {
+                                                                <tr>
+                                                                    <td>
+                                                                        @Departments.Department
+                                                                    </td>
+                                                                    <td>
+                                                                        @Departments.DeptQty
+                                                                    </td>
+                                                                </tr>
+                                                            }
+                                                        </tbody>
+                                                    </table>
+                                                }
+                                            </td>
+                                            <td style="text-align-last: left; vertical-align: top;">@brands.Quantity</td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    }
+                    else
+                    {
+                        <div align="center" id="msg" style="padding-top:15px;">
+                            <div class="alert alert-success">No Result found.</div>
+                        </div>
+                    }
+                </div>
+            </div>
+        }
+    }
+
+</div>

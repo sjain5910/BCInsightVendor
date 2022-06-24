@@ -1,0 +1,109 @@
+﻿
+@model BCInsight.Models.PSPFDreportViewModel
+@{
+    ViewBag.Title = "Sell Through Report";
+}
+<div class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+
+            </div><!-- /.col -->
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item">Report</li>
+                    <li class="breadcrumb-item active">Sell Through Report</li>
+                </ol>
+            </div><!-- /.col -->
+        </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+</div>
+<div class="card-header">
+    <h3>Sell Through Ranking Report</h3><br />
+    <div class="form-group row">
+        <label for="inputEmail3" class="col-sm-2 col-form-label">City</label>
+        <div class="col-sm-4">
+            @Html.DropDownListFor(model => model.Sites, new SelectList(ViewBag.Sites, "Value", "Text"), "All", new { @class = "form-control" })
+        </div>
+        <label for="inputEmail3" class="col-sm-2 col-form-label">Division</label>
+        <div class="col-sm-4">
+            @Html.DropDownListFor(model => model.Division, new List<SelectListItem>
+                    {
+
+                        new SelectListItem{ Text="BOYS WEAR", Value = "BOYS WEAR" },
+                        new SelectListItem{ Text="ETHENIC WEAR", Value = "ETHENIC WEAR" },
+                        new SelectListItem{ Text="GIRLS WEAR", Value = "GIRLS WEAR" },
+                        new SelectListItem{ Text="LADIES WEAR", Value = "LADIES WEAR" },
+                        new SelectListItem{ Text="MENS WEAR", Value = "MENS WEAR" },
+                        new SelectListItem{ Text="FOOTWEAR", Value = "FOOTWEAR" },
+                     }, "Select", new { @class = "form-control" })
+
+            @Html.ValidationMessageFor(m => m.Division, "", new { @class = "error Division" })
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="inputEmail3" class="col-sm-2 col-form-label">Month</label>
+        <div class="col-sm-4">
+            @Html.DropDownListFor(model => model.reportmonth, new List<SelectListItem>
+                 {
+                     new SelectListItem{ Text="April", Value = "04" },
+                     new SelectListItem{ Text="May", Value = "05" },
+                     new SelectListItem{ Text="June", Value = "06" },
+                     new SelectListItem{ Text="July", Value = "07" },
+                     new SelectListItem{ Text="August", Value = "08" },
+                     new SelectListItem{ Text="September", Value = "09" },
+                     new SelectListItem{ Text="October", Value = "10" },
+                     new SelectListItem{ Text="November", Value = "11" },
+                     new SelectListItem{ Text="December", Value = "12" },
+                     new SelectListItem{ Text="January", Value = "01" },
+                     new SelectListItem{ Text="February", Value = "02" },
+                     new SelectListItem{ Text="March", Value = "03" },
+                  }, "Select", new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="text-center">
+        <button type="button" id="Generatesellthroughreport" class="btn btn-primary btn-sm mr-1 " data-loading-text="Loading..." title="Search"> Generate</button>
+    </div>
+
+</div>
+
+<div class="card-body">
+
+</div>
+<script type="text/javascript">
+
+    $("#Generatesellthroughreport").click(function () {
+    debugger
+    var SiteName = $("#Sites").val();
+        var selectedmonth = $("#reportmonth").val();
+        var Division = $("#Division").val();
+        if (Division == null || Division == '' || Division == undefined) {
+            $(".Division").html("Select Division");
+            return false;
+        }
+        else {
+            $(".Division").html("");
+        }
+
+        $("#ajax-loader").show()
+
+            $.ajax({
+                type: "GET",
+                data: { SiteName, selectedmonth,Division },
+                url: '@Url.Action("sellThroughRankingReport", "Report")',
+                success: function (response) {
+                    debugger
+                    $(".card-body").html(response);
+                    $("#ajax-loader").hide();
+                },
+                failure: function (response) {
+                    $("#ajax-loader").hide();
+                    alert(response.d);
+                },
+                complete: function () {
+                }
+            });
+
+});
+
+</script>
